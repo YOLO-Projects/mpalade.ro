@@ -1,8 +1,8 @@
 {
   "name": "mpalade.ro",
   "version": "0.0.1",
-  "description": "Marius Palade official website",
-  "productName": "mpalade website",
+  "description": "Marius Palade's official website - Fullstack developer - Laravel, Quasar Framework, Vue.js & many more",
+  "productName": "Marius Palade's official website - Fullstack developer - Laravel, Quasar Framework, Vue.js & many more",
   "cordovaId": "org.cordova.quasar.app",
   "capacitorId": "",
   "author": "Marius Palade",
