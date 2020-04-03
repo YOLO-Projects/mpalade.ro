@@ -1,44 +1,56 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
+    <q-header
+      elevated
+      class="q-pa-md"
+    >
       <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          icon="menu"
-          aria-label="Menu"
-          @click="leftDrawerOpen = !leftDrawerOpen"
-        />
+        <router-link
+          to="/"
+          class="row text-white items-center absolute-left"
+        >
+          <q-icon
+            name="home"
+            class="vertical-middle"
+            style="font-size: 2.5em"
+          />
+          <q-toolbar-title
+            class="ellipsis"
+          >
+            Marius Palade
+          </q-toolbar-title>
+        </router-link>
 
-        <q-toolbar-title>
-          Quasar App
-        </q-toolbar-title>
+        <q-space />
 
-        <div>Quasar v{{ $q.version }}</div>
+        <q-list class="row absolute-right">
+          <q-item class="q-px-sm">
+            <q-item-section>
+              <q-btn
+                type="a"
+                href="https://www.linkedin.com/in/marius-palade/"
+                target="_blank"
+                class="glossy"
+                round
+                color="primary"
+                icon="fab fa-linkedin-in"/>
+            </q-item-section>
+          </q-item>
+          <q-item class="q-px-sm">
+            <q-item-section>
+              <q-btn
+                type="a"
+                href="https://github.com/yoyosan"
+                target="_blank"
+                class="glossy"
+                round
+                color="primary"
+                icon="fab fa-github"/>
+            </q-item-section>
+          </q-item>
+        </q-list>
       </q-toolbar>
     </q-header>
-
-    <q-drawer
-      v-model="leftDrawerOpen"
-      show-if-above
-      bordered
-      content-class="bg-grey-1"
-    >
-      <q-list>
-        <q-item-label
-          header
-          class="text-grey-8"
-        >
-          Essential Links
-        </q-item-label>
-        <EssentialLink
-          v-for="link in essentialLinks"
-          :key="link.title"
-          v-bind="link"
-        />
-      </q-list>
-    </q-drawer>
 
     <q-page-container>
       <router-view />
@@ -47,57 +59,29 @@
 </template>
 
 <script>
-import EssentialLink from 'components/EssentialLink'
-
 export default {
   name: 'MainLayout',
 
-  components: {
-    EssentialLink
-  },
-
   data () {
     return {
-      leftDrawerOpen: false,
-      essentialLinks: [
-        {
-          title: 'Docs',
-          caption: 'quasar.dev',
-          icon: 'school',
-          link: 'https://quasar.dev'
-        },
-        {
-          title: 'Github',
-          caption: 'github.com/quasarframework',
-          icon: 'code',
-          link: 'https://github.com/quasarframework'
-        },
-        {
-          title: 'Discord Chat Channel',
-          caption: 'chat.quasar.dev',
-          icon: 'chat',
-          link: 'https://chat.quasar.dev'
-        },
-        {
-          title: 'Forum',
-          caption: 'forum.quasar.dev',
-          icon: 'record_voice_over',
-          link: 'https://forum.quasar.dev'
-        },
-        {
-          title: 'Twitter',
-          caption: '@quasarframework',
-          icon: 'rss_feed',
-          link: 'https://twitter.quasar.dev'
-        },
-        {
-          title: 'Facebook',
-          caption: '@QuasarFramework',
-          icon: 'public',
-          link: 'https://facebook.quasar.dev'
-        }
-      ]
     }
   }
 }
 </script>
+
+<style>
+  .home-link {
+    text-color: white;
+  }
+  .q-header .q-toolbar__title {
+    font-family:Hepta Slab;
+    font-weight:700;
+    font-size:30px;
+    flex:none
+  }
+  a {
+    text-decoration: none;
+    border: none;
+    outline: none;
+  }
+</style>
