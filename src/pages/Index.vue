@@ -26,6 +26,9 @@
               type="a"
               href="mailto: contact@mpalade.ro"
               icon="fas fa-at">
+              <q-tooltip content-class="bg-blue-7">
+                contact@mpalade.ro
+              </q-tooltip>
             </q-btn>
 
             <br/><br/>

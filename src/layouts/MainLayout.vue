@@ -28,6 +28,22 @@
             <q-item-section>
               <q-btn
                 type="a"
+                  href="skype:mmarius.palade?chat"
+                class="glossy"
+                round
+                color="primary"
+                icon="fab fa-skype">
+                <q-tooltip content-class="bg-blue-7">
+                  mmarius.palade
+                </q-tooltip>
+              </q-btn>
+            </q-item-section>
+          </q-item>
+
+          <q-item class="q-px-sm">
+            <q-item-section>
+              <q-btn
+                type="a"
                 href="https://www.linkedin.com/in/marius-palade/"
                 target="_blank"
                 class="glossy"
