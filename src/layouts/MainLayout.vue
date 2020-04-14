@@ -4,26 +4,25 @@
       elevated
       class="q-pa-md"
     >
-      <q-toolbar>
+      <q-toolbar class="row items-baseline">
         <router-link
           to="/"
-          class="row text-white items-center absolute-left"
+          class="text-white row items-center"
         >
-          <q-icon
-            name="home"
-            class="vertical-middle"
-            style="font-size: 2.5em"
-          />
           <q-toolbar-title
             class="ellipsis"
           >
+            <q-icon
+              class="q-mb-xs"
+              name="home"
+            />
             Marius Palade
           </q-toolbar-title>
         </router-link>
 
         <q-space />
 
-        <q-list class="row absolute-right">
+        <q-list class="row">
           <q-item class="q-px-sm">
             <q-item-section>
               <q-btn
@@ -64,6 +63,10 @@
                 icon="fab fa-github"/>
             </q-item-section>
           </q-item>
+
+          <q-item class="q-px-sm">
+            <language-switch></language-switch>
+          </q-item>
         </q-list>
       </q-toolbar>
     </q-header>
@@ -81,6 +84,9 @@ export default {
   data () {
     return {
     }
+  },
+  components: {
+    'language-switch': require('components/LanguageSwitch').default
   }
 }
 </script>

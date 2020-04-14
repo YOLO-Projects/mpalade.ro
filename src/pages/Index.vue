@@ -36,7 +36,7 @@
           </div>
         </q-card-section>
 
-        <q-card-section class="col-5 flex flex-center">
+        <q-card-section class="col-5">
           <q-img
             class="rounded-borders"
             src="statics/marius_palade.jpg"

@@ -22,5 +22,10 @@ export default {
     'button-demo': 'Vezi demo',
     'button-source': 'Vezi codul sursă',
     'button-no-source': 'Codul sursă nu este disponibil'
+  },
+  language: {
+    label: 'Limba',
+    ro: 'Română',
+    en: 'Engleză'
   }
 }
