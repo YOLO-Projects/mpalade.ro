@@ -141,6 +141,7 @@
 
         <q-img
           contain
+          class="rounded-borders"
           src="statics/todo.png"
         />
 
