@@ -7,18 +7,17 @@
       style="min-width: 400px; width: 600px">
       <q-card-section horizontal>
         <q-card-section class="q-pt-xs">
-          <div class="text-h5 q-mt-sm q-mb-xs">Who am I?</div>
+          <div class="text-h5 q-mt-sm q-mb-xs">{{ $t('about.whoami') }}</div>
           <div class="text-body2 text-grey-8 q-mt-md">
-            Hi there! My name is Marius.
+            {{ $t('about.greet') }}
 
             <br/><br/>
 
-            I'm a Full Stack Developer,
-            mainly working with Laravel and Quasar + Vue.js.
+            {{ $t('about.speciality') }}
 
             <br/><br/>
 
-            Contact me for various opportunities
+            {{ $t('about.contact-email') }}
             <q-btn
               round
               color="primary"
@@ -33,8 +32,7 @@
 
             <br/><br/>
 
-            Find below some of the projects I've worked on and
-            the ones I'm working at right now.
+            {{ $t('about.projects') }}
           </div>
         </q-card-section>
 
@@ -54,15 +52,23 @@
     >
       <q-card-section class="col">
         <q-card-section class="q-pt-xs">
-          <div class="text-h5 q-mt-sm q-mb-xs">Gymbuff</div>
+          <div class="text-h5 q-mt-sm q-mb-xs">
+            Gymbuff
+            <q-badge
+              class="q-pa-xs"
+              color="warning"
+              align="top">{{ $t('gymbuff.status') }}
+            </q-badge>
+          </div>
+
           <div class="text-body2 text-grey-8 q-mt-md text-justify">
-            An all-in-one platform for:
+            {{ $t('gymbuff.intro') }}
             <ul>
-              <li>Eating healthy and cooking.</li>
-              <li>Exercise enough to keep healthy.</li>
+              <li>{{ $t('gymbuff.line1') }}</li>
+              <li>{{ $t('gymbuff.line2') }}</li>
             </ul>
             <br />
-            Portable on any platform: browser, desktop, IOS, Android.
+            {{ $t('gymbuff.line3') }}
           </div>
         </q-card-section>
 
@@ -97,7 +103,7 @@
           target="_blank"
           icon="fas fa-eye">
           <q-tooltip content-class="bg-red">
-            View demo
+            {{ $t('tooltip.button-demo') }}
           </q-tooltip>
         </q-btn>
         <q-btn
@@ -105,7 +111,7 @@
           color="grey"
           icon="fab fa-github-alt">
           <q-tooltip content-class="bg-grey">
-            Source code not available
+            {{ $t('tooltip.button-no-source') }}
           </q-tooltip>
         </q-btn>
       </q-card-actions>
@@ -118,11 +124,18 @@
     >
       <q-card-section class="col">
         <q-card-section class="q-pt-xs">
-          <div class="text-h5 q-mt-sm q-mb-xs">Awesome TODO</div>
+          <div class="text-h5 q-mt-sm q-mb-xs">
+            Awesome TODO
+            <q-badge
+              class="q-pa-xs"
+              color="green"
+              align="top">{{ $t('todo.status') }}
+            </q-badge>
+          </div>
           <div class="text-body2 text-grey-8 q-mt-md text-justify">
-            A simple TODO app using Quasar + Vue.js and Firebase.
+            {{ $t('todo.intro') }}
             <br /><br />
-            Available on all platforms: browser, desktop, Android.
+            {{ $t('todo.line1') }}
           </div>
         </q-card-section>
 
@@ -143,7 +156,7 @@
           target="_blank"
           icon="fas fa-eye">
           <q-tooltip content-class="bg-red">
-            View demo
+            {{ $t('tooltip.button-demo') }}
           </q-tooltip>
         </q-btn>
         <q-btn
@@ -154,7 +167,7 @@
           target="_blank"
           icon="fab fa-github-alt">
           <q-tooltip content-class="bg-accent">
-            Check the source code
+            {{ $t('tooltip.button-source') }}
           </q-tooltip>
         </q-btn>
       </q-card-actions>
