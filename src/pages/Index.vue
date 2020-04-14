@@ -171,6 +171,17 @@
             {{ $t('tooltip.button-source') }}
           </q-tooltip>
         </q-btn>
+        <q-btn
+          round
+          color="green-7"
+          type="a"
+          href="https://github.com/training-yoyosan/awesome-todo/releases"
+          target="_blank"
+          icon="get_app">
+          <q-tooltip content-class="bg-green-7">
+            {{ $t('tooltip.button-download') }}
+          </q-tooltip>
+        </q-btn>
       </q-card-actions>
     </q-card>
 

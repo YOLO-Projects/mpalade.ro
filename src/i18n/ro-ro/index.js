@@ -21,7 +21,8 @@ export default {
   tooltip: {
     'button-demo': 'Vezi demo',
     'button-source': 'Vezi codul sursă',
-    'button-no-source': 'Codul sursă nu este disponibil'
+    'button-no-source': 'Codul sursă nu este disponibil',
+    'button-download': 'Descarcă aplicația'
   },
   language: {
     label: 'Limba',
