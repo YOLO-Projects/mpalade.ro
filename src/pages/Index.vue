@@ -37,6 +37,7 @@
 
         <q-card-section class="col-5">
           <q-img
+            contain
             class="rounded-borders"
             src="statics/marius_palade.jpg"
           />
