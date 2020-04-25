@@ -4,14 +4,12 @@
       elevated
       class="q-pa-md"
     >
-      <q-toolbar class="row items-baseline">
+      <q-toolbar class="items-baseline">
         <router-link
           to="/"
           class="text-white row items-center"
         >
-          <q-toolbar-title
-            class="ellipsis"
-          >
+          <q-toolbar-title>
             <q-icon
               class="q-mb-xs"
               name="home"
@@ -22,7 +20,7 @@
 
         <q-space />
 
-        <q-list class="row">
+        <q-list class="row justify-around">
           <q-item class="q-px-sm">
             <q-item-section>
               <q-btn
@@ -91,19 +89,27 @@ export default {
 }
 </script>
 
-<style>
-  .home-link {
-    text-color: white;
-  }
-  .q-header .q-toolbar__title {
-    font-family:Hepta Slab;
-    font-weight:700;
-    font-size:30px;
-    flex:none
-  }
-  a {
-    text-decoration: none;
-    border: none;
-    outline: none;
-  }
+<style lang="sass">
+  .home-link
+    color: white
+
+  .q-toolbar
+    flex-direction: row
+
+  body.screen--sm, body.screen--xs
+    .q-toolbar
+      flex-direction: column
+      align-items: center
+
+  .q-header
+    .q-toolbar__title
+      font-family: Hepta Slab
+      font-weight: 700
+      font-size: 30px
+      flex: none
+
+  a
+    text-decoration: none
+    border: none
+    outline: none
 </style>
