@@ -3,8 +3,7 @@
 
     <q-card
       class="row q-ma-md"
-      bordered
-      style="min-width: 400px; width: 600px">
+      bordered>
       <q-card-section horizontal>
         <q-card-section class="q-pt-xs">
           <div class="text-h5 q-mt-sm q-mb-xs">{{ $t('about.whoami') }}</div>
@@ -48,7 +47,6 @@
     <q-card
       class="row q-ma-sm"
       bordered
-      style="min-width: 400px;  width: 550px"
     >
       <q-card-section class="col">
         <q-card-section class="q-pt-xs">
@@ -120,7 +118,6 @@
     <q-card
       class="row q-ma-sm"
       bordered
-      style="min-width: 400px; width: 550px"
     >
       <q-card-section class="col">
         <q-card-section class="q-pt-xs">
