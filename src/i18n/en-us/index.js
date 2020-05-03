@@ -14,7 +14,7 @@ export default {
     status: 'In progress'
   },
   todo: {
-    intro: 'A simple TODO application, made using Quasar + Vue.js și Firebase.',
+    intro: 'A simple TODO application, made using Quasar + Vue.js and Firebase.',
     line1: 'Available for the following platforms: browser, desktop, Android.',
     status: 'Done'
   },
