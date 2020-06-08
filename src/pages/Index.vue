@@ -52,7 +52,7 @@
       <q-card-section class="col">
         <q-card-section class="q-pt-xs">
           <div class="text-h5 q-mt-sm q-mb-xs">
-            Gymbuff
+            Lifebuff
             <q-badge
               class="q-pa-xs"
               color="warning"
@@ -98,7 +98,7 @@
           round
           color="red"
           type="a"
-          href="https://gymbuff.ro"
+          href="https://lifebuff.ro"
           target="_blank"
           icon="fas fa-eye">
           <q-tooltip content-class="bg-red">
