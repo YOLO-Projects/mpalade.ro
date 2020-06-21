@@ -1,8 +1,9 @@
 <template>
   <q-page class="column content-center items-center bg-primary">
     <q-card
-      class="row q-ma-md"
+      class="row q-ma-md q-pa-md"
       bordered
+      :style="$q.screen.gt.sm ? 'width: 50%' : 'width: 95%'"
     >
       <q-card-section horizontal>
         <q-card-section class="q-pt-xs">
@@ -47,9 +48,9 @@
     </q-card>
 
     <q-card
-      class="row q-ma-sm"
+      class="row q-ma-md"
       bordered
-      :style="$q.screen.gt.sm ? 'width: 40%' : 'width: 100%'"
+      :style="$q.screen.gt.sm ? 'width: 40%' : 'width: 95%'"
     >
       <q-card-section class="col">
         <q-card-section class="q-pt-xs">
@@ -124,7 +125,7 @@
 
     <q-card
       class="row q-ma-sm"
-      :style="$q.screen.gt.sm ? 'width: 40%' : 'width: 100%'"
+      :style="$q.screen.gt.sm ? 'width: 40%' : 'width: 95%'"
       bordered
     >
       <q-card-section class="col">
@@ -180,8 +181,59 @@
 
     <q-card
       class="row q-ma-sm"
+      :style="$q.screen.gt.sm ? 'width: 40%' : 'width: 95%'"
       bordered
-      :style="$q.screen.gt.sm ? 'width: 40%' : 'width: 100%'"
+    >
+      <q-card-section class="col">
+        <q-card-section class="q-pt-xs">
+          <div class="text-h5 q-mt-sm q-mb-xs">
+            {{ $t("contestatie.title") }}
+            <q-badge
+              class="q-pa-xs"
+              color="green"
+              align="top"
+            >{{ $t("contestatie.status") }}
+            </q-badge>
+          </div>
+          <div class="text-body2 text-grey-8 q-mt-md text-justify">
+            {{ $t("contestatie.intro") }}
+            <br /><br />
+            {{ $t("contestatie.line1") }}
+          </div>
+        </q-card-section>
+      </q-card-section>
+      <q-card-actions
+        vertical
+        class="justify-around q-px-md"
+      >
+        <q-btn
+          round
+          color="red"
+          type="a"
+          href="https://contestatie-dev.abvlegal.ro"
+          target="_blank"
+          icon="fas fa-eye"
+        >
+          <q-tooltip content-class="bg-red">
+            {{ $t("tooltip.button-demo") }}
+          </q-tooltip>
+        </q-btn>
+        <q-btn
+          round
+          color="grey"
+          icon="fab fa-github-alt"
+        >
+          <q-tooltip content-class="bg-grey">
+            {{ $t("tooltip.button-no-source") }}
+          </q-tooltip>
+        </q-btn>
+      </q-card-actions>
+    </q-card>
+
+    <q-card
+      class="row q-ma-sm"
+      bordered
+      :style="$q.screen.gt.sm ? 'width: 40%' : 'width: 95%'"
     >
       <q-card-section class="col">
         <q-card-section class="q-pt-xs">

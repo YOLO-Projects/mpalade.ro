@@ -23,6 +23,12 @@ export default {
     line1: 'Trimite documentele tale către baza ta de clienți, prin poștă sau email, de la distanță și de pe orice device.',
     status: 'Done'
   },
+  contestatie: {
+    title: 'Contestație amendă',
+    intro: 'Contestă amenda neconstituțională din timpul carantinei.',
+    line1: 'Completează-ți datele personale, plătește(SMS sau card) și apoi urmează pașii din PDF-ul primit.',
+    status: 'Done'
+  },
   tooltip: {
     'button-demo': 'Vezi demo',
     'button-source': 'Vezi codul sursă',

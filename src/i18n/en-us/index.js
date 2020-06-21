@@ -23,6 +23,12 @@ export default {
     line1: 'Send your documents to your customer base, through post or e-mail, from your home and from any device.',
     status: 'Done'
   },
+  contestatie: {
+    title: 'Fine appeal',
+    intro: 'Appeal unconstitutional fine during the quarantine period.',
+    line1: 'Fill in your personal data, pay(SMS or card) and then follow the instructions in the PDF received.',
+    status: 'Done'
+  },
   tooltip: {
     'button-demo': 'View demo',
     'button-source': 'View the source code',
