@@ -4,5 +4,5 @@ git pull
 yarn
 quasar build
 cp .htaccess dist/spa
-chown -R lifebuff:lifebuff .
+chown -R mpalade:mpalade .
 chmod -R u+rwX,go+rX,go-w .

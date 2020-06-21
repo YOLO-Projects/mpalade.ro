@@ -6,7 +6,7 @@
     {
       "label": "Build prod",
       "type": "shell",
-      "command": "ssh -p31222 root@mpalade.ro 'cd /home/mpalade/public_html"
+      "command": "ssh -p31222 root@mpalade.ro 'cd /home/mpalade/public_html && sh scripts/build.sh"
     }
   ]
 }
