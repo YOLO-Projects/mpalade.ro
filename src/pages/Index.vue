@@ -1,37 +1,38 @@
 <template>
   <q-page class="column content-center items-center bg-primary">
-
     <q-card
       class="row q-ma-md"
-      bordered>
+      bordered
+    >
       <q-card-section horizontal>
         <q-card-section class="q-pt-xs">
-          <div class="text-h5 q-mt-sm q-mb-xs">{{ $t('about.whoami') }}</div>
+          <div class="text-h5 q-mt-sm q-mb-xs">{{ $t("about.whoami") }}</div>
           <div class="text-body2 text-grey-8 q-mt-md">
-            {{ $t('about.greet') }}
+            {{ $t("about.greet") }}
 
-            <br/><br/>
+            <br /><br />
 
-            {{ $t('about.speciality') }}
+            {{ $t("about.speciality") }}
 
-            <br/><br/>
+            <br /><br />
 
-            {{ $t('about.contact-email') }}
+            {{ $t("about.contact-email") }}
             <q-btn
               round
               color="primary"
               size="10px"
               type="a"
               href="mailto: contact@mpalade.ro"
-              icon="fas fa-at">
+              icon="fas fa-at"
+            >
               <q-tooltip content-class="bg-blue-7">
                 contact@mpalade.ro
               </q-tooltip>
             </q-btn>
 
-            <br/><br/>
+            <br /><br />
 
-            {{ $t('about.projects') }}
+            {{ $t("about.projects") }}
           </div>
         </q-card-section>
 
@@ -56,18 +57,19 @@
             <q-badge
               class="q-pa-xs"
               color="warning"
-              align="top">{{ $t('gymbuff.status') }}
+              align="top"
+            >{{ $t("gymbuff.status") }}
             </q-badge>
           </div>
 
           <div class="text-body2 text-grey-8 q-mt-md text-justify">
-            {{ $t('gymbuff.intro') }}
+            {{ $t("gymbuff.intro") }}
             <ul>
-              <li>{{ $t('gymbuff.line1') }}</li>
-              <li>{{ $t('gymbuff.line2') }}</li>
+              <li>{{ $t("gymbuff.line1") }}</li>
+              <li>{{ $t("gymbuff.line2") }}</li>
             </ul>
             <br />
-            {{ $t('gymbuff.line3') }}
+            {{ $t("gymbuff.line3") }}
           </div>
         </q-card-section>
 
@@ -93,24 +95,27 @@
       </q-card-section>
       <q-card-actions
         vertical
-        class="justify-around q-px-md">
+        class="justify-around q-px-md"
+      >
         <q-btn
           round
           color="red"
           type="a"
           href="https://lifebuff.ro"
           target="_blank"
-          icon="fas fa-eye">
+          icon="fas fa-eye"
+        >
           <q-tooltip content-class="bg-red">
-            {{ $t('tooltip.button-demo') }}
+            {{ $t("tooltip.button-demo") }}
           </q-tooltip>
         </q-btn>
         <q-btn
           round
           color="grey"
-          icon="fab fa-github-alt">
+          icon="fab fa-github-alt"
+        >
           <q-tooltip content-class="bg-grey">
-            {{ $t('tooltip.button-no-source') }}
+            {{ $t("tooltip.button-no-source") }}
           </q-tooltip>
         </q-btn>
       </q-card-actions>
@@ -127,13 +132,14 @@
             <q-badge
               class="q-pa-xs"
               color="green"
-              align="top">{{ $t('todo.status') }}
+              align="top"
+            >{{ $t("todo.status") }}
             </q-badge>
           </div>
           <div class="text-body2 text-grey-8 q-mt-md text-justify">
-            {{ $t('todo.intro') }}
+            {{ $t("todo.intro") }}
             <br /><br />
-            {{ $t('todo.line1') }}
+            {{ $t("todo.line1") }}
           </div>
         </q-card-section>
 
@@ -142,20 +148,21 @@
           class="rounded-borders"
           src="statics/todo.png"
         />
-
       </q-card-section>
       <q-card-actions
         vertical
-        class="justify-around q-px-md">
+        class="justify-around q-px-md"
+      >
         <q-btn
           round
           color="red"
           type="a"
-          href="https://mpalade.ro/todo"
+          href="https://todo.mpalade.ro"
           target="_blank"
-          icon="fas fa-eye">
+          icon="fas fa-eye"
+        >
           <q-tooltip content-class="bg-red">
-            {{ $t('tooltip.button-demo') }}
+            {{ $t("tooltip.button-demo") }}
           </q-tooltip>
         </q-btn>
         <q-btn
@@ -164,9 +171,10 @@
           type="a"
           href="https://github.com/training-yoyosan/awesome-todo"
           target="_blank"
-          icon="fab fa-github-alt">
+          icon="fab fa-github-alt"
+        >
           <q-tooltip content-class="bg-accent">
-            {{ $t('tooltip.button-source') }}
+            {{ $t("tooltip.button-source") }}
           </q-tooltip>
         </q-btn>
         <q-btn
@@ -175,14 +183,14 @@
           type="a"
           href="https://github.com/training-yoyosan/awesome-todo/releases"
           target="_blank"
-          icon="get_app">
+          icon="get_app"
+        >
           <q-tooltip content-class="bg-green-7">
-            {{ $t('tooltip.button-download') }}
+            {{ $t("tooltip.button-download") }}
           </q-tooltip>
         </q-btn>
       </q-card-actions>
     </q-card>
-
   </q-page>
 </template>
 
