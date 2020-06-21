@@ -6,7 +6,7 @@ export default {
     'contact-email': 'Contactează-mă pentru oportunități la ',
     projects: 'Mai jos găsești o scurtă prezentare a proiectelor la care am lucrat și lucrez acum.'
   },
-  gymbuff: {
+  lifebuff: {
     intro: 'O platformă atotcuprinzătoare pentru:',
     line1: 'A mânca și găti sănătos.',
     line2: 'A face mișcare suficientă pentru a te menține sănătos.',
@@ -17,6 +17,11 @@ export default {
     intro: 'O aplicație simplă pentru lucruri "De făcut", ce folosește Quasar + Vue.js și Firebase.',
     line1: 'Disponibilă pentru următoarele platforme: browser, aplicație desktop, Android.',
     status: 'Gata'
+  },
+  replic: {
+    intro: 'Comunicare poștală cu un click.',
+    line1: 'Trimite documentele tale către baza ta de clienți, prin poștă sau email, de la distanță și de pe orice device.',
+    status: 'Done'
   },
   tooltip: {
     'button-demo': 'Vezi demo',

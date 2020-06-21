@@ -6,7 +6,7 @@ export default {
     'contact-email': 'Contact me for various opportunities at ',
     projects: 'Find below some of the projects I\'ve worked on and the ones I\'m working at right now.'
   },
-  gymbuff: {
+  lifebuff: {
     intro: 'An all-in-one platform for:',
     line1: 'Healthy eating and cooking.',
     line2: 'Exercise enough to keep healthy.',
@@ -18,11 +18,17 @@ export default {
     line1: 'Available for the following platforms: browser, desktop, Android.',
     status: 'Done'
   },
+  replic: {
+    intro: 'Postal delivery with a click.',
+    line1: 'Send your documents to your customer base, through post or e-mail, from your home and from any device.',
+    status: 'Done'
+  },
   tooltip: {
     'button-demo': 'View demo',
     'button-source': 'View the source code',
     'button-no-source': 'Source code not available',
-    'button-download': 'Download the application'
+    'button-download': 'Download the application',
+    'button-live': 'View live'
   },
   language: {
     label: 'Language',

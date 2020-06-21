@@ -49,6 +49,7 @@
     <q-card
       class="row q-ma-sm"
       bordered
+      :style="$q.screen.gt.sm ? 'width: 40%' : 'width: 100%'"
     >
       <q-card-section class="col">
         <q-card-section class="q-pt-xs">
@@ -58,18 +59,18 @@
               class="q-pa-xs"
               color="warning"
               align="top"
-            >{{ $t("gymbuff.status") }}
+            >{{ $t("lifebuff.status") }}
             </q-badge>
           </div>
 
           <div class="text-body2 text-grey-8 q-mt-md text-justify">
-            {{ $t("gymbuff.intro") }}
+            {{ $t("lifebuff.intro") }}
             <ul>
-              <li>{{ $t("gymbuff.line1") }}</li>
-              <li>{{ $t("gymbuff.line2") }}</li>
+              <li>{{ $t("lifebuff.line1") }}</li>
+              <li>{{ $t("lifebuff.line2") }}</li>
             </ul>
             <br />
-            {{ $t("gymbuff.line3") }}
+            {{ $t("lifebuff.line3") }}
           </div>
         </q-card-section>
 
@@ -123,7 +124,64 @@
 
     <q-card
       class="row q-ma-sm"
+      :style="$q.screen.gt.sm ? 'width: 40%' : 'width: 100%'"
       bordered
+    >
+      <q-card-section class="col">
+        <q-card-section class="q-pt-xs">
+          <div class="text-h5 q-mt-sm q-mb-xs">
+            re:plic
+            <q-badge
+              class="q-pa-xs"
+              color="green"
+              align="top"
+            >{{ $t("replic.status") }}
+            </q-badge>
+          </div>
+          <div class="text-body2 text-grey-8 q-mt-md text-justify">
+            {{ $t("replic.intro") }}
+            <br /><br />
+            {{ $t("replic.line1") }}
+          </div>
+        </q-card-section>
+
+        <q-img
+          class="rounded-borders"
+          src="statics/replic.png"
+        />
+      </q-card-section>
+      <q-card-actions
+        vertical
+        class="justify-around q-px-md"
+      >
+        <q-btn
+          round
+          color="red"
+          type="a"
+          href="https://replic.ro"
+          target="_blank"
+          icon="fas fa-eye"
+        >
+          <q-tooltip content-class="bg-red">
+            {{ $t("tooltip.button-live") }}
+          </q-tooltip>
+        </q-btn>
+        <q-btn
+          round
+          color="grey"
+          icon="fab fa-github-alt"
+        >
+          <q-tooltip content-class="bg-grey">
+            {{ $t("tooltip.button-no-source") }}
+          </q-tooltip>
+        </q-btn>
+      </q-card-actions>
+    </q-card>
+
+    <q-card
+      class="row q-ma-sm"
+      bordered
+      :style="$q.screen.gt.sm ? 'width: 40%' : 'width: 100%'"
     >
       <q-card-section class="col">
         <q-card-section class="q-pt-xs">
