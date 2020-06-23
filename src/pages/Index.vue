@@ -4,7 +4,7 @@
       class="row q-ma-md justify-center"
       :class="$q.screen.gt.sm ? 'q-pa-md' : 'q-pa-xs'"
       bordered
-      :style="$q.screen.gt.sm ? 'width: 50%' : 'width: 95%'"
+      :style="$q.screen.gt.sm ? 'width: 45%' : 'width: 95%'"
     >
       <q-card-section horizontal>
         <q-card-section class="q-pt-xs">
