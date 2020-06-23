@@ -1,7 +1,7 @@
 <template>
   <q-page class="column content-center items-center bg-primary">
     <q-card
-      class="row q-ma-md"
+      class="row q-ma-md justify-center"
       :class="$q.screen.gt.sm ? 'q-pa-md' : 'q-pa-xs'"
       bordered
       :style="$q.screen.gt.sm ? 'width: 50%' : 'width: 95%'"
