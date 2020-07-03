@@ -29,6 +29,11 @@ export default {
     line1: 'Completează-ți datele personale, plătește(SMS sau card) și apoi urmează pașii din PDF-ul primit.',
     status: 'Done'
   },
+  thepit: {
+    intro: 'The PIT este locul în care cea mai bună echipă sunt "băieții".',
+    line1: 'Locul în care retrăiești bucuria și inocența copilăriei, la standardele adultului de astăzi.',
+    status: 'Done'
+  },
   tooltip: {
     'button-demo': 'Vezi demo',
     'button-source': 'Vezi codul sursă',

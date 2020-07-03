@@ -29,6 +29,11 @@ export default {
     line1: 'Fill in your personal data, pay(SMS or card) and then follow the instructions in the PDF received.',
     status: 'Done'
   },
+  thepit: {
+    intro: 'The PIT is the place where the best team is "the boys".',
+    line1: 'The place where you relive the joy and innocence of childhood to today\'s adult standards.',
+    status: 'Done'
+  },
   tooltip: {
     'button-demo': 'View demo',
     'button-source': 'View the source code',

@@ -126,6 +126,23 @@
       </template>
     </project-card>
 
+    <project-card
+      title="The PIT"
+      :status="{ label: $t('thepit.status'), color: 'green' }"
+      :intro="$t('thepit.intro')"
+      :line1="$t('thepit.line1')"
+      :demoButton="{ href: 'https://thepit.ro', tooltip: $t('tooltip.button-live') }"
+      :sourceButton="{ href: null, tooltip: $t('tooltip.button-no-source') }"
+    >
+      <template v-slot:logo>
+        <q-img
+          contain
+          class="rounded-borders"
+          src="statics/thepit.png"
+        />
+      </template>
+    </project-card>
+
   </q-page>
 </template>
 

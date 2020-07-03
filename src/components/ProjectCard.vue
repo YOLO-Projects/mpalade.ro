@@ -26,7 +26,7 @@
             {{ $t("lifebuff.line3") }}
           </div>
           <div v-else>
-            <br /><br />
+            <br />
             {{ line1 }}
           </div>
         </div>
