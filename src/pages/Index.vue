@@ -1,5 +1,6 @@
 <template>
   <q-page class="column content-center items-center bg-primary">
+
     <q-card
       class="row q-ma-md justify-center"
       :class="$q.screen.gt.sm ? 'q-pa-md' : 'q-pa-xs'"
@@ -48,34 +49,17 @@
       </q-card-section>
     </q-card>
 
-    <q-card
-      class="row q-ma-md"
-      bordered
-      :style="$q.screen.gt.sm ? 'width: 40%' : 'width: 95%'"
+    <project-card
+      title="Lifebuff"
+      :status="{ label: $t('lifebuff.status'), color: 'yellow' }"
+      :intro="$t('lifebuff.intro')"
+      :line1="$t('lifebuff.line1')"
+      :line2="$t('lifebuff.line2')"
+      :line3="$t('lifebuff.line3')"
+      :demoButton="{ href: 'https://lifebuff.ro', tooltip: $t('tooltip.button-demo') }"
+      :sourceButton="{ href: null, tooltip: $t('tooltip.button-no-source') }"
     >
-      <q-card-section class="col">
-        <q-card-section class="q-pt-xs">
-          <div class="text-h5 q-mt-sm q-mb-xs">
-            Lifebuff
-            <q-badge
-              class="q-pa-xs"
-              color="warning"
-              align="top"
-            >{{ $t("lifebuff.status") }}
-            </q-badge>
-          </div>
-
-          <div class="text-body2 text-grey-8 q-mt-md text-justify">
-            {{ $t("lifebuff.intro") }}
-            <ul>
-              <li>{{ $t("lifebuff.line1") }}</li>
-              <li>{{ $t("lifebuff.line2") }}</li>
-            </ul>
-            <br />
-            {{ $t("lifebuff.line3") }}
-          </div>
-        </q-card-section>
-
+      <template v-slot:logo>
         <q-card-section class="q-pt-xs row justify-around items-center">
           <q-icon
             name="fas fa-leaf"
@@ -95,218 +79,62 @@
             size="4rem"
           />
         </q-card-section>
-      </q-card-section>
-      <q-card-actions
-        vertical
-        class="justify-around q-px-md"
-      >
-        <q-btn
-          round
-          color="red"
-          type="a"
-          href="https://lifebuff.ro"
-          target="_blank"
-          icon="fas fa-eye"
-        >
-          <q-tooltip content-class="bg-red">
-            {{ $t("tooltip.button-demo") }}
-          </q-tooltip>
-        </q-btn>
-        <q-btn
-          round
-          color="grey"
-          icon="fab fa-github-alt"
-        >
-          <q-tooltip content-class="bg-grey">
-            {{ $t("tooltip.button-no-source") }}
-          </q-tooltip>
-        </q-btn>
-      </q-card-actions>
-    </q-card>
+      </template>
+    </project-card>
 
-    <q-card
-      class="row q-ma-sm"
-      :style="$q.screen.gt.sm ? 'width: 40%' : 'width: 95%'"
-      bordered
+    <project-card
+      title="re: plic"
+      :status="{ label: $t('replic.status'), color: 'green' }"
+      :intro="$t('replic.intro')"
+      :line1="$t('replic.line1')"
+      :demoButton="{ href: 'https://replic.ro', tooltip: $t('tooltip.button-live') }"
+      :sourceButton="{ href: null, tooltip: $t('tooltip.button-no-source') }"
     >
-      <q-card-section class="col">
-        <q-card-section class="q-pt-xs">
-          <div class="text-h5 q-mt-sm q-mb-xs">
-            re:plic
-            <q-badge
-              class="q-pa-xs"
-              color="green"
-              align="top"
-            >{{ $t("replic.status") }}
-            </q-badge>
-          </div>
-          <div class="text-body2 text-grey-8 q-mt-md text-justify">
-            {{ $t("replic.intro") }}
-            <br /><br />
-            {{ $t("replic.line1") }}
-          </div>
-        </q-card-section>
-
+      <template v-slot:logo>
         <q-img
           class="rounded-borders"
           src="statics/replic.png"
         />
-      </q-card-section>
-      <q-card-actions
-        vertical
-        class="justify-around q-px-md"
-      >
-        <q-btn
-          round
-          color="red"
-          type="a"
-          href="https://replic.ro"
-          target="_blank"
-          icon="fas fa-eye"
-        >
-          <q-tooltip content-class="bg-red">
-            {{ $t("tooltip.button-live") }}
-          </q-tooltip>
-        </q-btn>
-        <q-btn
-          round
-          color="grey"
-          icon="fab fa-github-alt"
-        >
-          <q-tooltip content-class="bg-grey">
-            {{ $t("tooltip.button-no-source") }}
-          </q-tooltip>
-        </q-btn>
-      </q-card-actions>
-    </q-card>
+      </template>
+    </project-card>
 
-    <q-card
-      class="row q-ma-sm"
-      :style="$q.screen.gt.sm ? 'width: 40%' : 'width: 95%'"
-      bordered
+    <project-card
+      :title="$t('contestatie.title')"
+      :status="{ label: $t('contestatie.status'), color: 'green' }"
+      :intro="$t('contestatie.intro')"
+      :line1="$t('contestatie.line1')"
+      :demoButton="{ href: 'https://contestatie-dev.abvlegal.ro', tooltip: $t('tooltip.button-demo') }"
+      :sourceButton="{ href: null, tooltip: $t('tooltip.button-no-source') }"
     >
-      <q-card-section class="col">
-        <q-card-section class="q-pt-xs">
-          <div class="text-h5 q-mt-sm q-mb-xs">
-            {{ $t("contestatie.title") }}
-            <q-badge
-              class="q-pa-xs"
-              color="green"
-              align="top"
-            >{{ $t("contestatie.status") }}
-            </q-badge>
-          </div>
-          <div class="text-body2 text-grey-8 q-mt-md text-justify">
-            {{ $t("contestatie.intro") }}
-            <br /><br />
-            {{ $t("contestatie.line1") }}
-          </div>
-        </q-card-section>
-      </q-card-section>
-      <q-card-actions
-        vertical
-        class="justify-around q-px-md"
-      >
-        <q-btn
-          round
-          color="red"
-          type="a"
-          href="https://contestatie-dev.abvlegal.ro"
-          target="_blank"
-          icon="fas fa-eye"
-        >
-          <q-tooltip content-class="bg-red">
-            {{ $t("tooltip.button-demo") }}
-          </q-tooltip>
-        </q-btn>
-        <q-btn
-          round
-          color="grey"
-          icon="fab fa-github-alt"
-        >
-          <q-tooltip content-class="bg-grey">
-            {{ $t("tooltip.button-no-source") }}
-          </q-tooltip>
-        </q-btn>
-      </q-card-actions>
-    </q-card>
+    </project-card>
 
-    <q-card
-      class="row q-ma-sm"
-      bordered
-      :style="$q.screen.gt.sm ? 'width: 40%' : 'width: 95%'"
+    <project-card
+      title="Awesome TODO"
+      :status="{ label: $t('todo.status'), color: 'green' }"
+      :intro="$t('todo.intro')"
+      :line1="$t('todo.line1')"
+      :demoButton="{ href: 'https://todo.mpalade.ro', tooltip: $t('tooltip.button-demo') }"
+      :sourceButton="{ href: 'https://github.com/training-yoyosan/awesome-todo', tooltip: $t('tooltip.button-source') }"
+      :downloadButton="{ href: 'https://github.com/training-yoyosan/awesome-todo/releases', tooltip: $t('tooltip.button-download') }"
     >
-      <q-card-section class="col">
-        <q-card-section class="q-pt-xs">
-          <div class="text-h5 q-mt-sm q-mb-xs">
-            Awesome TODO
-            <q-badge
-              class="q-pa-xs"
-              color="green"
-              align="top"
-            >{{ $t("todo.status") }}
-            </q-badge>
-          </div>
-          <div class="text-body2 text-grey-8 q-mt-md text-justify">
-            {{ $t("todo.intro") }}
-            <br /><br />
-            {{ $t("todo.line1") }}
-          </div>
-        </q-card-section>
-
+      <template v-slot:logo>
         <q-img
           contain
           class="rounded-borders"
           src="statics/todo.png"
         />
-      </q-card-section>
-      <q-card-actions
-        vertical
-        class="justify-around q-px-md"
-      >
-        <q-btn
-          round
-          color="red"
-          type="a"
-          href="https://todo.mpalade.ro"
-          target="_blank"
-          icon="fas fa-eye"
-        >
-          <q-tooltip content-class="bg-red">
-            {{ $t("tooltip.button-demo") }}
-          </q-tooltip>
-        </q-btn>
-        <q-btn
-          round
-          color="accent"
-          type="a"
-          href="https://github.com/training-yoyosan/awesome-todo"
-          target="_blank"
-          icon="fab fa-github-alt"
-        >
-          <q-tooltip content-class="bg-accent">
-            {{ $t("tooltip.button-source") }}
-          </q-tooltip>
-        </q-btn>
-        <q-btn
-          round
-          color="green-7"
-          type="a"
-          href="https://github.com/training-yoyosan/awesome-todo/releases"
-          target="_blank"
-          icon="get_app"
-        >
-          <q-tooltip content-class="bg-green-7">
-            {{ $t("tooltip.button-download") }}
-          </q-tooltip>
-        </q-btn>
-      </q-card-actions>
-    </q-card>
+      </template>
+    </project-card>
+
   </q-page>
 </template>
 
 <script>
 export default {
-  name: 'PageIndex'
+  name: 'PageIndex',
+
+  components: {
+    'project-card': () => import('components/ProjectCard')
+  }
 }
 </script>
