@@ -52,9 +52,11 @@
       </q-btn>
       <q-btn
         round
+        type="a"
         :color="sourceButton.href ? 'accent' : 'grey'"
         icon="fab fa-github-alt"
         :href="sourceButton.href"
+        target="_blank"
       >
         <q-tooltip :content-class="sourceButton.href ? 'bg-accent' : 'bg-grey'">
           {{ sourceButton.tooltip }}

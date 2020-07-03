@@ -1,5 +1,5 @@
 <template>
-  <q-page class="column content-center items-center bg-primary">
+  <q-page class="column content-center items-center bg-primary q-py-sm">
 
     <q-card
       class="row q-ma-md justify-center"
