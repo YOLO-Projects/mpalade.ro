@@ -137,7 +137,7 @@
       :line1="$t('thepit.line1')"
       :demoButton="{ href: 'https://thepit.ro', tooltip: $t('tooltip.button-live') }"
       :sourceButton="{ href: null, tooltip: $t('tooltip.button-no-source') }"
-      :tech="['laravel', 'tailwind', 'github']"
+      :tech="['laravel', 'github', 'tailwind']"
     >
       <template v-slot:logo>
         <q-img
