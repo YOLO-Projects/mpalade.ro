@@ -44,6 +44,7 @@ export default {
   language: {
     label: 'Language',
     ro: 'Romanian',
-    en: 'English'
+    en: 'English',
+    tech: 'Tech stack'
   }
 }

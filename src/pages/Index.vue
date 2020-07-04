@@ -58,6 +58,7 @@
       :line3="$t('lifebuff.line3')"
       :demoButton="{ href: 'https://lifebuff.ro', tooltip: $t('tooltip.button-demo') }"
       :sourceButton="{ href: null, tooltip: $t('tooltip.button-no-source') }"
+      :tech="['vuejs', 'quasar', 'laravel', 'bitbucket']"
     >
       <template v-slot:logo>
         <q-card-section class="q-pt-xs row justify-around items-center">
@@ -89,6 +90,7 @@
       :line1="$t('replic.line1')"
       :demoButton="{ href: 'https://replic.ro', tooltip: $t('tooltip.button-live') }"
       :sourceButton="{ href: null, tooltip: $t('tooltip.button-no-source') }"
+      :tech="['vuejs', 'quasar', 'laravel', 'bitbucket']"
     >
       <template v-slot:logo>
         <q-img
@@ -105,6 +107,7 @@
       :line1="$t('contestatie.line1')"
       :demoButton="{ href: 'https://contestatie-dev.abvlegal.ro', tooltip: $t('tooltip.button-demo') }"
       :sourceButton="{ href: null, tooltip: $t('tooltip.button-no-source') }"
+      :tech="['vuejs', 'quasar', 'laravel', 'bitbucket']"
     >
     </project-card>
 
@@ -116,6 +119,7 @@
       :demoButton="{ href: 'https://todo.mpalade.ro', tooltip: $t('tooltip.button-demo') }"
       :sourceButton="{ href: 'https://github.com/training-yoyosan/awesome-todo', tooltip: $t('tooltip.button-source') }"
       :downloadButton="{ href: 'https://github.com/training-yoyosan/awesome-todo/releases', tooltip: $t('tooltip.button-download') }"
+      :tech="['vuejs', 'quasar', 'laravel', 'github']"
     >
       <template v-slot:logo>
         <q-img
@@ -133,6 +137,7 @@
       :line1="$t('thepit.line1')"
       :demoButton="{ href: 'https://thepit.ro', tooltip: $t('tooltip.button-live') }"
       :sourceButton="{ href: null, tooltip: $t('tooltip.button-no-source') }"
+      :tech="['laravel', 'tailwind', 'github']"
     >
       <template v-slot:logo>
         <q-img

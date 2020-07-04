@@ -43,6 +43,7 @@ export default {
   language: {
     label: 'Limba',
     ro: 'Română',
-    en: 'Engleză'
+    en: 'Engleză',
+    tech: 'Tehnologii folosite'
   }
 }

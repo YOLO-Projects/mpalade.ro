@@ -1,3 +1,4 @@
+/* eslint-disable vue/no-unused-components */
 <template>
   <q-card
     class="row q-ma-sm"
@@ -63,6 +64,17 @@
         </q-tooltip>
       </q-btn>
       <q-btn
+        round
+        type="a"
+        color="orange"
+        icon="fas fa-layer-group"
+        @click="techStack = true"
+      >
+        <q-tooltip content-class="bg-orange">
+          {{ $t('language.tech') }}
+        </q-tooltip>
+      </q-btn>
+      <q-btn
         v-if="downloadButton"
         round
         color="green-7"
@@ -75,6 +87,23 @@
           {{ downloadButton.tooltip }}
         </q-tooltip>
       </q-btn>
+
+      <q-dialog
+        v-model="techStack"
+        class="q-pa-none q-ma-none"
+      >
+        <q-card class="my-card q-pa-none q-ma-none">
+          <q-card-section class="q-pa-none q-ma-none">
+            <div class="row">
+              <component
+                v-for="(t, index) in tech"
+                :key=index
+                :is="t"
+              ></component>
+            </div>
+          </q-card-section>
+        </q-card>
+      </q-dialog>
 
     </q-card-actions>
   </q-card>
@@ -107,11 +136,27 @@ export default {
       type: Object,
       required: true
     },
-    downloadButton: Object
+    downloadButton: Object,
+    tech: {
+      required: true,
+      type: Array,
+      default: () => []
+    }
   },
 
   data () {
-    return {}
+    return {
+      techStack: false
+    }
+  },
+
+  components: {
+    bitbucket: () => import('components/tech-tiles/bitbucket'),
+    github: () => import('components/tech-tiles/github'),
+    laravel: () => import('components/tech-tiles/laravel'),
+    vuejs: () => import('components/tech-tiles/vuejs'),
+    quasar: () => import('components/tech-tiles/quasar'),
+    tailwind: () => import('components/tech-tiles/tailwind')
   }
 }
 </script>
