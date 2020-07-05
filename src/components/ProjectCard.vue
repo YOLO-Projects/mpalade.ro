@@ -101,6 +101,17 @@
                 :is="t"
               ></component>
             </div>
+            <q-page-sticky
+              :position="$q.screen.gt.sm ? 'top' : 'bottom'"
+              :offset="$q.screen.gt.sm ? [0, 140]: [0, 0]"
+            >
+              <q-btn
+                fab
+                icon="close"
+                color="primary"
+                v-close-popup
+              />
+            </q-page-sticky>
           </q-card-section>
         </q-card>
       </q-dialog>
