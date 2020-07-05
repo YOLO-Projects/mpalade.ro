@@ -70,6 +70,20 @@
             </q-item>
 
             <q-item class="q-px-sm">
+              <q-item-section>
+                <q-btn
+                  type="a"
+                  href="https://bitbucket.org/yoyosan/"
+                  target="_blank"
+                  class="glossy"
+                  round
+                  color="primary"
+                  icon="fab fa-bitbucket"
+                />
+              </q-item-section>
+            </q-item>
+
+            <q-item class="q-px-sm">
               <language-switch></language-switch>
             </q-item>
           </q-list>
@@ -125,6 +139,20 @@
                       round
                       color="primary"
                       icon="fab fa-github"
+                    />
+                  </q-item-section>
+                </q-item>
+
+                <q-item>
+                  <q-item-section>
+                    <q-btn
+                      type="a"
+                      href="https://bitbucket.org/yoyosan/"
+                      target="_blank"
+                      class="glossy"
+                      round
+                      color="primary"
+                      icon="fab fa-bitbucket"
                     />
                   </q-item-section>
                 </q-item>
