@@ -2,7 +2,7 @@
   <q-layout view="lHh Lpr lFf">
     <q-header
       elevated
-      class="q-pa-md"
+      :class="$q.screen.gt.sm ? 'q-pa-sm' : 'q-pa-xs'"
     >
       <q-toolbar class="row items-center justify-around">
         <router-link
@@ -171,6 +171,7 @@
     <q-footer
       reveal
       elevated
+      class="orientation-portrait"
     >
       <q-toolbar class="row self-center text-center q-pa-md">
         <q-toolbar-title class="text-subtitle2">
