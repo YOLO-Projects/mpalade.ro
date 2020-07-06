@@ -94,7 +94,6 @@
           color="primary"
           icon="fas fa-bars"
           v-else
-          class="q-mt-sm"
         >
           <q-menu>
             <div class="column bg-primary">
