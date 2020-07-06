@@ -3,6 +3,7 @@
   <q-card
     class="row q-ma-sm"
     :style="$q.screen.gt.sm ? 'width: 40%' : 'width: 95%'"
+    style="min-height: 250px"
     bordered
   >
     <q-card-section class="col">
@@ -16,7 +17,7 @@
           >{{ status.label }}
           </q-badge>
         </div>
-        <div class="text-body2 text-grey-8 q-mt-md text-justify">
+        <div class="text-body2 text-grey-8 q-mt-md text-left">
           {{ intro }}
           <div v-if="line1 && line2 && line3">
             <ul>

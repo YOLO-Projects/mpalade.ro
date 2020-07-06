@@ -10,7 +10,7 @@
       <q-card-section horizontal>
         <q-card-section class="q-pt-xs">
           <div class="text-h5 q-mt-sm q-mb-xs">{{ $t("about.whoami") }}</div>
-          <div class="text-body2 text-grey-8 q-mt-md">
+          <div class="text-body2 text-grey-8 q-mt-md text-left">
             {{ $t("about.greet") }}
 
             <br /><br />
