@@ -14,7 +14,6 @@
               class="q-mb-xs"
               name="home"
             />
-            Marius Palade
           </q-toolbar-title>
         </router-link>
 

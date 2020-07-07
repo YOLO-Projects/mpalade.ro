@@ -1,7 +1,7 @@
 export default {
   about: {
     whoami: 'Who am I?',
-    greet: 'Hi there! My name is Marius.',
+    greet: 'Hi there! My name is Marius Palade.',
     speciality: 'I\'m a Full Stack Developer, mainly working with Laravel and Quasar + Vue.js.',
     'contact-email': 'Contact me for various opportunities at ',
     projects: 'Find below some of the projects I\'ve worked on and the ones I\'m working at right now.'
