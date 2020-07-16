@@ -93,6 +93,7 @@
           color="primary"
           icon="fas fa-bars"
           v-else
+          :class="$q.screen.gt.sm ? '' : 'q-mr-sm'"
         >
           <q-menu>
             <div class="column bg-primary">
@@ -162,6 +163,33 @@
             </div>
           </q-menu>
         </q-btn>
+
+        <q-btn
+          v-if="$q.screen.gt.sm"
+          class="absolute-top-right q-px-lg q-py-none"
+          unelevated
+          color="red"
+          label="Fork me"
+          style="transform: rotate(45deg); top: 0px; right: -50px"
+          no-caps
+          align="center"
+          type="a"
+          href="https://bitbucket.org/yoyosan/mpalade.ro/src/master/"
+          target="_blank"
+        />
+
+        <q-btn
+          v-else
+          class="absolute-top-right q-px-lg q-py-none"
+          unelevated
+          color="red"
+          icon="mdi-source-fork"
+          style="transform: rotate(45deg); top: -8px; right: -43px"
+          align="center"
+          type="a"
+          href="https://bitbucket.org/yoyosan/mpalade.ro/src/master/"
+          target="_blank"
+        />
 
       </q-toolbar>
     </q-header>
