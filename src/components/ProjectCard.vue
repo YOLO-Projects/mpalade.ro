@@ -20,7 +20,7 @@
         <div class="text-body2 text-grey-8 q-mt-md text-left">
           {{ intro }}
           <div v-if="line1 && line2 && line3">
-            <ul>
+            <ul :class="$q.screen.gt.sm ? 'q-pa-lg': 'q-pa-sm'">
               <li>{{ $t("lifebuff.line1") }}</li>
               <li>{{ $t("lifebuff.line2") }}</li>
             </ul>

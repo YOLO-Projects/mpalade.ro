@@ -68,20 +68,20 @@
         <q-card-section class="q-pt-xs row justify-around items-center">
           <q-icon
             name="fas fa-leaf"
-            class="text-green-9 "
-            size="4rem"
+            class="text-green-9"
+            :size="$q.screen.gt.sm ? '4em' : '2.5em'"
           />
 
           <q-icon
             name="fas fa-plus"
             class="text-yellow-8"
-            size="3rem"
+            :size="$q.screen.gt.sm ? '4em' : '2em'"
           />
 
           <q-icon
             name="fas fa-dumbbell"
             class="text-deep-orange"
-            size="4rem"
+            :size="$q.screen.gt.sm ? '4em' : '2.5em'"
           />
         </q-card-section>
       </template>
