@@ -56,7 +56,7 @@
 
     <project-card
       title="Lifebuff"
-      :status="{ label: $t('lifebuff.status'), color: 'yellow' }"
+      :status="{ label: $t('lifebuff.status'), color: 'yellow-8' }"
       :intro="$t('lifebuff.intro')"
       :line1="$t('lifebuff.line1')"
       :line2="$t('lifebuff.line2')"
