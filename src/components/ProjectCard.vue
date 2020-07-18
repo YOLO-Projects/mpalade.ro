@@ -7,7 +7,7 @@
     bordered
   >
     <q-card-section class="col">
-      <q-card-section class="q-pt-xs">
+      <q-card-section :class="$q.screen.gt.sm ? 'q-pt-xs' : 'q-px-none'">
         <div class="text-h5 q-mt-sm q-mb-xs">
           {{ title }}
           <q-badge
@@ -38,7 +38,8 @@
     </q-card-section>
     <q-card-actions
       vertical
-      class="justify-around q-px-md"
+      class="justify-around"
+      :class="$q.screen.gt.sm ? 'q-px-md' : 'q-px-sm'"
     >
       <q-btn
         round
