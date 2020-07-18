@@ -7,10 +7,14 @@
       bordered
       :style="$q.screen.gt.sm ? 'width: 45%' : 'width: 95%'"
     >
-      <q-card-section horizontal>
+      <q-card-section :horizontal="$q.screen.gt.sm">
         <q-card-section class="q-pt-xs">
           <div class="text-h5 q-mt-sm q-mb-xs">{{ $t("about.whoami") }}</div>
-          <div class="text-body2 text-grey-8 q-mt-md text-left">
+          <div
+            class="text-grey-8 q-mt-md text-left"
+            :class="$q.screen.gt.sm ? 'text-body2' : 'text-subtitle2'"
+            style="hyphens: auto"
+          >
             {{ $t("about.greet") }}
 
             <br /><br />
