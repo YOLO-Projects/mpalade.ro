@@ -51,7 +51,7 @@
             contain
             class="rounded-borders"
             src="statics/marius_palade.jpg"
-            :ratio="$q.screen.gt.sm ? '1' : '1/2'"
+            :ratio="$q.screen.gt.sm ? 1 : 4/3"
           />
         </q-card-section>
       </q-card-section>
