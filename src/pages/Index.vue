@@ -92,6 +92,36 @@
     </project-card>
 
     <project-card
+      :title="$t('ql-example.title')"
+      :status="{ label: $t('ql-example.status'), color: 'green' }"
+      :intro="$t('ql-example.intro')"
+      :line1="$t('ql-example.line1')"
+      :line2="$t('ql-example.line2')"
+      :demoButton="{ href: 'http://frex.mpalade.ro', tooltip: $t('tooltip.button-demo') }"
+      :sourceButton="{ href: 'https://github.com/training-yoyosan?q=spa&type=&language=', tooltip: $t('tooltip.button-source') }"
+      :tech="['vuejs', 'quasar', 'laravel', 'github']"
+    >
+      <template v-slot:logo>
+        <q-card-section class="q-pt-xs row justify-around items-center">
+          <q-avatar :size="$q.screen.gt.sm ? '4em' : '2em'">
+            <img src="https://cdn.quasar.dev/app-icons/icon-128x128.png" />
+          </q-avatar>
+          <q-icon
+            name="fas fa-plus"
+            class="text-info"
+            :size="$q.screen.gt.sm ? '4em' : '2em'"
+          />
+
+          <q-icon
+            name="fab fa-laravel"
+            class="text-red"
+            :size="$q.screen.gt.sm ? '4em' : '2.5em'"
+          />
+        </q-card-section>
+      </template>
+    </project-card>
+
+    <project-card
       title="re: plic"
       :status="{ label: $t('replic.status'), color: 'green' }"
       :intro="$t('replic.intro')"

@@ -6,6 +6,12 @@ export default {
     'contact-email': 'Contact me for various opportunities at ',
     projects: 'Find below some of the projects I\'ve worked on and the ones I\'m working at right now.'
   },
+  'ql-example': {
+    title: 'Example Quasar + Laravel',
+    intro: 'Example applications of combining Laravel 7 and Quasar super powers :)',
+    line1: 'There are two repositories, one for each. Check out the demo and source code to learn more.',
+    status: 'Done'
+  },
   lifebuff: {
     intro: 'An all-in-one platform for:',
     line1: 'Healthy eating and cooking.',
