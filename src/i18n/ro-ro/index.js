@@ -13,6 +13,12 @@ export default {
     line3: 'Disponibilă pentru următoarele platforme: browser, aplicație desktop, Android, IOS.',
     status: 'În lucru'
   },
+  'ql-example': {
+    title: 'Exemplu Quasar + Laravel',
+    intro: 'Aplicații șablon care combină super-puterile Laravel 7 și Quasar :)',
+    line1: 'Sunt două proiecte, câte unul pentru fiecare tehnologie. Vezi demo și codul sursă pentru a afla mai multe.',
+    status: 'Gata'
+  },
   todo: {
     intro: 'O aplicație simplă pentru lucruri "De făcut", ce folosește Quasar + Vue.js și Firebase.',
     line1: 'Disponibilă pentru următoarele platforme: browser, aplicație desktop, Android.',
