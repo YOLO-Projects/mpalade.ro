@@ -21,18 +21,18 @@ export default {
   replic: {
     intro: 'Comunicare poștală cu un click.',
     line1: 'Trimite documentele tale către baza ta de clienți, prin poștă sau email, de la distanță și de pe orice device.',
-    status: 'Done'
+    status: 'Gata'
   },
   contestatie: {
     title: 'Contestație amendă',
     intro: 'Contestă amenda neconstituțională din timpul carantinei.',
     line1: 'Completează-ți datele personale, plătește(SMS sau card) și apoi urmează pașii din PDF-ul primit.',
-    status: 'Done'
+    status: 'Gata'
   },
   thepit: {
     intro: 'The PIT este locul în care cea mai bună echipă sunt "băieții".',
     line1: 'Locul în care retrăiești bucuria și inocența copilăriei, la standardele adultului de astăzi.',
-    status: 'Done'
+    status: 'Gata'
   },
   tooltip: {
     'button-demo': 'Vezi demo',
