@@ -8,7 +8,7 @@ export default {
   },
   'ql-example': {
     title: 'Example Quasar + Laravel',
-    intro: 'Example applications of combining Laravel 7 and Quasar super powers :)',
+    intro: 'Example applications of combining Laravel 8 and Quasar super powers :)',
     line1: 'There are two repositories, one for each. Check out the demo and source code to learn more.',
     status: 'Done'
   },

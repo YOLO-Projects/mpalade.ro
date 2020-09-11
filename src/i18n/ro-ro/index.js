@@ -15,7 +15,7 @@ export default {
   },
   'ql-example': {
     title: 'Exemplu Quasar + Laravel',
-    intro: 'Aplicații șablon care combină super-puterile Laravel 7 și Quasar :)',
+    intro: 'Aplicații șablon care combină super-puterile Laravel 8 și Quasar :)',
     line1: 'Sunt două proiecte, câte unul pentru fiecare tehnologie. Vezi demo și codul sursă pentru a afla mai multe.',
     status: 'Gata'
   },
