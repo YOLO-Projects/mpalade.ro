@@ -2,8 +2,8 @@ export default {
   about: {
     whoami: 'Cine sunt?',
     greet: 'Salut! Numele meu este Marius Palade.',
-    speciality: 'Sunt programator "Full Stack", lucrând în principal cu Laravel și Vue.js + Quasar.',
-    'contact-email': 'Contactează-mă pentru oportunități la ',
+    speciality: 'Sunt programator "Full Stack", lucrând în principal cu <a href="https://laravel.com" target="_blank">Laravel</a> și Vue.js + <a href="https://quasar.dev" target="_blank">Quasar</a>.',
+    'contact-email': 'Contactează-mă pentru oportunități via ',
     projects: 'Mai jos găsești o scurtă prezentare a proiectelor la care am lucrat și lucrez acum.'
   },
   lifebuff: {

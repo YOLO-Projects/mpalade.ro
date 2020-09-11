@@ -2,8 +2,8 @@ export default {
   about: {
     whoami: 'Who am I?',
     greet: 'Hi there! My name is Marius Palade.',
-    speciality: 'I\'m a Full Stack Developer, mainly working with Laravel and Quasar + Vue.js.',
-    'contact-email': 'Contact me for various opportunities at ',
+    speciality: 'I\'m a Full Stack Developer, mainly working with <a href="https://laravel.com" target="_blank">Laravel</a> and Vue.js + <a href="https://quasar.dev" target="_blank">Quasar</a>.',
+    'contact-email': 'Contact me for various opportunities via ',
     projects: 'Find below some of the projects I\'ve worked on and the ones I\'m working at right now.'
   },
   'ql-example': {

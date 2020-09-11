@@ -22,7 +22,7 @@
 
             <br /><br />
 
-            {{ $t("about.speciality") }}
+            <div v-html="specialty"></div>
 
             <br /><br />
 
@@ -193,8 +193,19 @@
 export default {
   name: 'PageIndex',
 
+  data () {
+    return {
+      specialty: this.$t('about.speciality')
+    }
+  },
+
   components: {
     'project-card': () => import('components/ProjectCard')
   }
 }
 </script>
+
+<style lang="sass">
+a
+  color: $primary
+</style>
