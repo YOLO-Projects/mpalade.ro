@@ -36,16 +36,7 @@ export default {
   watch: {
     lang (lang) {
       this.$i18n.locale = lang
-      this.langOptions = [
-        {
-          value: 'ro-ro',
-          label: this.$t('language.ro')
-        },
-        {
-          value: 'en-us',
-          label: this.$t('language.en')
-        }
-      ]
+      this.$root.$emit('language-changed')
     }
   }
 }

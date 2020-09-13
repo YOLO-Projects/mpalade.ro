@@ -193,6 +193,12 @@
 export default {
   name: 'PageIndex',
 
+  created () {
+    this.$root.$on('language-changed', () => {
+      this.specialty = this.$t('about.speciality')
+    })
+  },
+
   data () {
     return {
       specialty: this.$t('about.speciality')

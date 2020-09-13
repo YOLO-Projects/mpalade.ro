@@ -224,6 +224,7 @@ export default {
     return {
     }
   },
+
   components: {
     'language-switch': require('components/LanguageSwitch').default
   }
