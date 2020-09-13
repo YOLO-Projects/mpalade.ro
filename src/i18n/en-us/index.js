@@ -10,6 +10,7 @@ export default {
     title: 'Example Quasar + Laravel',
     intro: 'Example applications of combining Laravel 8 and Quasar super powers :)',
     line1: 'There are two repositories, one for each. Check out the demo and source code to learn more.',
+    line2: '',
     status: 'Done'
   },
   lifebuff: {

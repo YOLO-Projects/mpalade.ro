@@ -17,6 +17,7 @@ export default {
     title: 'Exemplu Quasar + Laravel',
     intro: 'Aplicații șablon care combină super-puterile Laravel 8 și Quasar :)',
     line1: 'Sunt două proiecte, câte unul pentru fiecare tehnologie. Vezi demo și codul sursă pentru a afla mai multe.',
+    line2: '',
     status: 'Gata'
   },
   todo: {
@@ -44,7 +45,8 @@ export default {
     'button-demo': 'Vezi demo',
     'button-source': 'Vezi codul sursă',
     'button-no-source': 'Codul sursă nu este disponibil',
-    'button-download': 'Descarcă aplicația'
+    'button-download': 'Descarcă aplicația',
+    'button-live': 'Vezi live'
   },
   language: {
     label: 'Limba',
