@@ -9,9 +9,13 @@
     map-options
     rounded
     style="min-width: 126px"
-    standout>
+    standout
+  >
     <template v-slot:prepend>
-      <q-icon color="white" name="language" />
+      <q-icon
+        color="white"
+        name="language"
+      />
     </template>
   </q-select>
 </template>
@@ -36,6 +40,19 @@ export default {
   watch: {
     lang (lang) {
       this.$i18n.locale = lang
+      // update language options to fix labels
+      this.langOptions = [
+        {
+          value: 'ro-ro',
+          label: this.$t('language.ro')
+        },
+        {
+          value: 'en-us',
+          label: this.$t('language.en')
+        }
+      ]
+      // emit language-changed event in global event bus
+      // this event in handled in Index page
       this.$root.$emit('language-changed')
     }
   }
@@ -43,10 +60,10 @@ export default {
 </script>
 
 <style lang="sass">
-  div.q-dialog.fullscreen
-    div.q-dialog__inner
-      div.q-field__prepend.q-field__marginal i
-        color: $primary !important
+div.q-dialog.fullscreen
+  div.q-dialog__inner
+    div.q-field__prepend.q-field__marginal i
+      color: $primary !important
 
       div.q-field__label
         color: $primary !important
@@ -54,9 +71,9 @@ export default {
       div.q-field__native.row.items-center > span
         color: $dark !important
 
-  div.q-field__control-container > div.q-field__native.row.items-center > span
-    color: white
+div.q-field__control-container > div.q-field__native.row.items-center > span
+  color: white
 
-  div.q-field__append.q-field__marginal.row.no-wrap.items-center.q-anchor--skip > i
-    color: white
+div.q-field__append.q-field__marginal.row.no-wrap.items-center.q-anchor--skip > i
+  color: white
 </style>
