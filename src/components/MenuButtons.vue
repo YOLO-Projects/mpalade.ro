@@ -46,20 +46,6 @@
     </q-item>
 
     <q-item>
-      <q-item-section>
-        <q-btn
-          type="a"
-          href="https://bitbucket.org/yoyosan/"
-          target="_blank"
-          class="glossy"
-          round
-          color="primary"
-          icon="fab fa-bitbucket"
-        />
-      </q-item-section>
-    </q-item>
-
-    <q-item>
       <language-switch></language-switch>
     </q-item>
   </q-list>
