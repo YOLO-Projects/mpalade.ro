@@ -139,6 +139,7 @@
     </project-card>
 
     <project-card
+      v-show="false"
       :title="$t('contestatie.title')"
       :status="{ label: $t('contestatie.status'), color: 'green' }"
       :intro="$t('contestatie.intro')"
