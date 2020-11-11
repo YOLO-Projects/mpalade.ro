@@ -49,7 +49,7 @@
           no-caps
           align="center"
           type="a"
-          href="https://bitbucket.org/yoyosan/mpalade.ro/src/master/"
+          href="https://github.com/YOLO-Projects/mpalade.ro"
           target="_blank"
         />
 
@@ -62,7 +62,7 @@
           style="transform: rotate(45deg); top: -8px; right: -43px"
           align="center"
           type="a"
-          href="https://bitbucket.org/yoyosan/mpalade.ro/src/master/"
+          href="https://github.com/YOLO-Projects/mpalade.ro"
           target="_blank"
         />
 
