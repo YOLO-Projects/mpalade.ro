@@ -50,7 +50,7 @@
           <q-img
             contain
             class="rounded-borders"
-            src="statics/marius_palade.jpg"
+            src="marius_palade.jpg"
             :ratio="$q.screen.gt.sm ? 1 : 4/3"
           />
         </q-card-section>
@@ -133,7 +133,7 @@
       <template v-slot:logo>
         <q-img
           class="rounded-borders"
-          src="statics/replic.png"
+          src="replic.png"
         />
       </template>
     </project-card>
@@ -164,7 +164,7 @@
         <q-img
           contain
           class="rounded-borders"
-          src="statics/todo.png"
+          src="todo.png"
         />
       </template>
     </project-card>
@@ -182,7 +182,7 @@
         <q-img
           contain
           class="rounded-borders"
-          src="statics/thepit.png"
+          src="thepit.png"
         />
       </template>
     </project-card>
