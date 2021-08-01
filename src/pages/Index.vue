@@ -212,9 +212,9 @@ export default {
 
   meta: {
     // sets document title
-    title: 'Marius Palade\'s official website',
+    // title: 'Marius Palade\'s official website',
     // optional; sets final title as "Index Page - My Website", useful for multiple level meta
-    titleTemplate: title => `${title}`,
+    // titleTemplate: title => `${title}`,
 
     // meta tags
     meta: {
