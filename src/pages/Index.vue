@@ -208,6 +208,30 @@ export default {
 
   components: {
     'project-card': () => import('components/ProjectCard')
+  },
+
+  meta: {
+    // sets document title
+    title: 'Marius Palade\'s official website',
+    // optional; sets final title as "Index Page - My Website", useful for multiple level meta
+    titleTemplate: title => `${title}`,
+
+    // meta tags
+    meta: {
+      keywords: { name: 'keywords', content: 'vue.js, quasar, react, php, laravel, docker, python, django, dev-ops' },
+      equiv: { 'http-equiv': 'Content-Type', content: 'text/html; charset=UTF-8' }
+      // viewport: { ''}
+    },
+
+    // CSS tags
+    link: {
+      material: { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
+    },
+
+    // <noscript> tags
+    noscript: {
+      default: 'This is content for browsers with no JS (or disabled JS)'
+    }
   }
 }
 </script>
