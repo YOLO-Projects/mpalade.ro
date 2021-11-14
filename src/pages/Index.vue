@@ -126,7 +126,7 @@
       :status="{ label: $t('replic.status'), color: 'green' }"
       :intro="$t('replic.intro')"
       :line1="$t('replic.line1')"
-      :demoButton="{ href: 'https://replic.ro', tooltip: $t('tooltip.button-live') }"
+      :demoButton="{ href: 'https://replicro.surge.sh', tooltip: $t('tooltip.button-live') }"
       :sourceButton="{ href: null, tooltip: $t('tooltip.button-no-source') }"
       :tech="['vuejs', 'quasar', 'laravel', 'bitbucket']"
     >
