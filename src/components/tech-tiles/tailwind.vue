@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white col-12 q-pa-md column justify-center items-center  q-gutter-y-sm">
+  <div class="bg-white col-12 q-pa-md column justify-center items-center q-gutter-y-sm">
     <q-icon
       color="white"
       style="font-size: 4.4em;"

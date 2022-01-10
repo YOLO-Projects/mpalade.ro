@@ -58,6 +58,19 @@
     </q-card>
 
     <project-card
+      title="Vue 3 Forum"
+      :status="{ label: $t('vue3-forum.status'), color: 'yellow-8' }"
+      :intro="$t('vue3-forum.intro')"
+      :line1="$t('vue3-forum.line1')"
+      :line2="$t('vue3-forum.line2')"
+      :line3="$t('vue3-forum.line3')"
+      :demoButton="{ href: 'https://v3forum.mpalade.ro', tooltip: $t('tooltip.button-demo') }"
+      :sourceButton="{ href: 'https://github.com/training-yoyosan/vue3-forum', tooltip: $t('tooltip.button-source') }"
+      :tech="['vuejs', 'github', 'firebase']"
+    >
+    </project-card>
+
+    <project-card
       title="Lifebuff"
       :status="{ label: $t('lifebuff.status'), color: 'yellow-8' }"
       :intro="$t('lifebuff.intro')"

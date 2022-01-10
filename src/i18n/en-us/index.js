@@ -13,6 +13,13 @@ export default {
     line2: '',
     status: 'Done'
   },
+  'vue3-forum': {
+    intro: 'An example forum, made using only front-end technologies.',
+    line1: 'I made this project to improve my skills with Vue 3 and Firebase.',
+    line2: 'I\'ve followed this <a href="https://vueschool.io/courses/the-vuejs-3-master-class" target="_blank">course</a>.',
+    line3: '',
+    status: 'In progress'
+  },
   lifebuff: {
     intro: 'An all-in-one platform for:',
     line1: 'Healthy eating and cooking.',

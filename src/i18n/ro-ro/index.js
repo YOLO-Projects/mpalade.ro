@@ -6,6 +6,13 @@ export default {
     'contact-email': 'Contactează-mă pentru oportunități via ',
     projects: 'Mai jos găsești o scurtă prezentare a proiectelor la care am lucrat și lucrez acum.'
   },
+  'vue3-forum': {
+    intro: 'Un exemplu de forum, făcut folosind doar tehnologii de front-end.',
+    line1: 'Făcut pentru a-mi îmbunătăți skill-urile de Vue 3 și Firebase.',
+    line2: 'Am urmat acest <a href="https://vueschool.io/courses/the-vuejs-3-master-class" target="_blank">curs</a>.',
+    line3: '',
+    status: 'În lucru'
+  },
   lifebuff: {
     intro: 'O platformă atotcuprinzătoare pentru:',
     line1: 'A mânca și găti sănătos.',

@@ -19,13 +19,13 @@
         </div>
         <div class="text-body2 text-grey-8 q-mt-md text-left">
           {{ intro }}
-          <div v-if="line1 && line2 && line3">
+          <div v-if="(line1 && line2) || line3">
             <ul :class="$q.screen.gt.sm ? 'q-pa-lg': 'q-pa-md'">
-              <li>{{ $t("lifebuff.line1") }}</li>
-              <li>{{ $t("lifebuff.line2") }}</li>
+              <li>{{ line1 }}</li>
+              <li v-html="line2"></li>
             </ul>
             <br />
-            {{ $t("lifebuff.line3") }}
+            {{ line3 }}
           </div>
           <div v-else>
             <br />
@@ -169,7 +169,8 @@ export default {
     laravel: () => import('components/tech-tiles/laravel'),
     vuejs: () => import('components/tech-tiles/vuejs'),
     quasar: () => import('components/tech-tiles/quasar'),
-    tailwind: () => import('components/tech-tiles/tailwind')
+    tailwind: () => import('components/tech-tiles/tailwind'),
+    firebase: () => import('components/tech-tiles/firebase')
   }
 }
 </script>
