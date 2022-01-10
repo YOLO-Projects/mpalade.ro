@@ -10,11 +10,11 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
-    "@quasar/extras": "^1.12.2",
+    "@quasar/extras": "^1.12.3",
     "axios": "^0.21.1",
     "is-svg": "^4.2.2",
     "nth-check": "^2.0.1",
-    "quasar": "^1.16.3",
+    "quasar": "^1.17.1",
     "set-value": "^4.0.1",
     "ssri": "^6.0.2",
     "vue-i18n": "^8.0.0",
