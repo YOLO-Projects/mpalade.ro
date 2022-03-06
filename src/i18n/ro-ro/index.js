@@ -11,14 +11,14 @@ export default {
     line1: 'Făcut pentru a-mi îmbunătăți skill-urile de Vue 3 și Firebase.',
     line2: 'Am urmat acest <a href="https://vueschool.io/courses/the-vuejs-3-master-class" target="_blank">curs</a>.',
     line3: '',
-    status: 'În lucru'
+    status: 'Gata'
   },
   lifebuff: {
     intro: 'O platformă atotcuprinzătoare pentru:',
     line1: 'A mânca și găti sănătos.',
     line2: 'A face mișcare suficientă pentru a te menține sănătos.',
     line3: 'Disponibilă pentru următoarele platforme: browser, aplicație desktop, Android, IOS.',
-    status: 'În lucru'
+    status: 'Gata'
   },
   'ql-example': {
     title: 'Exemplu Quasar + Laravel',

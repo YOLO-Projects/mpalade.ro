@@ -59,7 +59,7 @@
 
     <project-card
       title="Vue 3 Forum"
-      :status="{ label: $t('vue3-forum.status'), color: 'yellow-8' }"
+      :status="{ label: $t('vue3-forum.status'), color: 'green' }"
       :intro="$t('vue3-forum.intro')"
       :line1="$t('vue3-forum.line1')"
       :line2="$t('vue3-forum.line2')"
@@ -72,7 +72,7 @@
 
     <project-card
       title="Lifebuff"
-      :status="{ label: $t('lifebuff.status'), color: 'yellow-8' }"
+      :status="{ label: $t('lifebuff.status'), color: 'green' }"
       :intro="$t('lifebuff.intro')"
       :line1="$t('lifebuff.line1')"
       :line2="$t('lifebuff.line2')"
@@ -91,7 +91,7 @@
 
           <q-icon
             name="fas fa-plus"
-            class="text-yellow-8"
+            class="text-green"
             :size="$q.screen.gt.sm ? '4em' : '2em'"
           />
 

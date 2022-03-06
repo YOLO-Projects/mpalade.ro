@@ -18,14 +18,14 @@ export default {
     line1: 'I made this project to improve my skills with Vue 3 and Firebase.',
     line2: 'I\'ve followed this <a href="https://vueschool.io/courses/the-vuejs-3-master-class" target="_blank">course</a>.',
     line3: '',
-    status: 'In progress'
+    status: 'Done'
   },
   lifebuff: {
     intro: 'An all-in-one platform for:',
     line1: 'Healthy eating and cooking.',
     line2: 'Exercise enough to keep healthy.',
     line3: 'Available for the following platforms: browser, desktop, IOS, Android.',
-    status: 'In progress'
+    status: 'Done'
   },
   todo: {
     intro: 'A simple TODO application, made using Quasar + Vue.js and Firebase.',
