@@ -2,7 +2,7 @@
 <template>
   <q-card
     class="row q-ma-sm"
-    :style="$q.screen.gt.sm ? 'width: 40%' : 'width: 95%'"
+    :style="$q.screen.gt.sm ? 'width: 550px' : 'width: 95%'"
     style="min-height: 250px"
     bordered
   >

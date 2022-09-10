@@ -2,10 +2,10 @@
   <q-page class="column content-center items-center bg-primary q-py-sm">
 
     <q-card
-      class="row q-ma-md justify-center"
+      class="row q-ma-md justify-center content-center items-center"
       :class="$q.screen.gt.sm ? 'q-pa-md' : 'q-pa-xs'"
       bordered
-      :style="$q.screen.gt.sm ? 'width: 45%' : 'width: 95%'"
+      :style="$q.screen.gt.sm ? 'width: 550px' : 'width: 95%'"
     >
       <q-card-section :horizontal="$q.screen.gt.sm">
         <q-card-section
@@ -20,33 +20,32 @@
           >
             {{ $t("about.greet") }}
 
-            <br /><br />
+            <br/><br/>
 
             <div v-html="specialty"></div>
 
-            <br /><br />
+            <br/><br/>
 
+            <div class="q-mx-auto">
             {{ $t("about.contact-email") }}
-            <q-btn
-              round
-              color="primary"
-              size="10px"
-              type="a"
-              href="mailto: contact@mpalade.ro"
-              icon="fas fa-at"
-            >
-              <q-tooltip content-class="bg-blue-7">
+              <q-btn
+                color="primary"
+                size="lg"
+                flat
+                type="a"
+                href="mailto: contact@mpalade.ro"
+                class="q-my-md text-bold"
+                no-caps
+              >
                 contact@mpalade.ro
-              </q-tooltip>
-            </q-btn>
+              </q-btn>
+            </div>
 
-            <br /><br />
-
-            {{ $t("about.projects") }}
+            <div>{{ $t("about.projects") }}</div>
           </div>
         </q-card-section>
 
-        <q-card-section class="col-5">
+        <q-card-section class="col-5 column justify-center">
           <q-img
             contain
             class="rounded-borders"
@@ -117,7 +116,7 @@
       <template v-slot:logo>
         <q-card-section class="q-pt-xs row justify-around items-center">
           <q-avatar :size="$q.screen.gt.sm ? '4em' : '2em'">
-            <img src="https://cdn.quasar.dev/app-icons/icon-128x128.png" />
+            <img src="https://cdn.quasar.dev/app-icons/icon-128x128.png"/>
           </q-avatar>
           <q-icon
             name="fas fa-plus"

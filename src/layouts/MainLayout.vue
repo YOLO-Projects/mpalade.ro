@@ -45,7 +45,7 @@
           unelevated
           color="red"
           label="Fork me"
-          style="transform: rotate(45deg); top: 0px; right: -50px"
+          style="transform: rotate(45deg); top: 0; right: -50px"
           no-caps
           align="center"
           type="a"
@@ -121,7 +121,7 @@ body.screen--sm, body.screen--xs
 
 .q-header
   .q-toolbar__title
-    font-family: Hepta Slab
+    font-family: Hepta Slab, serif
     font-weight: 700
     flex: none
 

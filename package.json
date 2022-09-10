@@ -11,18 +11,18 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
-    "@quasar/extras": "^1.12.5",
+    "@quasar/extras": "^1.15.3",
     "axios": "^0.21.1",
     "is-svg": "^4.2.2",
     "nth-check": "^2.0.1",
-    "quasar": "^1.18.5",
+    "quasar": "^1.19.5",
     "set-value": "^4.0.1",
     "ssri": "^6.0.2",
     "vue-i18n": "^8.0.0",
     "xmldom": "^0.5.0"
   },
   "devDependencies": {
-    "@quasar/app": "^2.2.11",
+    "@quasar/app": "^2.4.1",
     "babel-eslint": "^10.0.1",
     "core-js": "^3.0.0",
     "eslint": "^6.8.0",
