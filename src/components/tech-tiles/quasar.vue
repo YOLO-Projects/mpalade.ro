@@ -12,13 +12,3 @@
     >Quasar</a>
   </div>
 </template>
-
-<script>
-export default {
-  name: 'TileQuasar',
-
-  data () {
-    return {}
-  }
-}
-</script>

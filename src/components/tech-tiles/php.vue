@@ -8,13 +8,3 @@
     <span class="text-white">PHP 7</span>
   </div>
 </template>
-
-<script>
-export default {
-  name: 'TilePHP',
-
-  data () {
-    return {}
-  }
-}
-</script>

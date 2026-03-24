@@ -1,3 +1,32 @@
+<script setup>
+import { ref, watch } from 'vue'
+import { useMeta, useQuasar } from 'quasar'
+import { useI18n } from 'vue-i18n'
+import ProjectCard from 'components/ProjectCard.vue'
+
+const $q = useQuasar()
+const { locale, t } = useI18n()
+
+useMeta(() => ({
+  meta: {
+    keywords: { name: 'keywords', content: 'vue.js, quasar, react, php, laravel, docker, python, django, dev-ops' },
+    equiv: { 'http-equiv': 'Content-Type', content: 'text/html; charset=UTF-8' }
+  },
+  link: {
+    material: { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
+  },
+  noscript: {
+    default: 'This is content for browsers with no JS (or disabled JS)'
+  }
+}))
+
+const specialty = ref(t('about.speciality'))
+
+watch(locale, () => {
+  specialty.value = t('about.speciality')
+})
+</script>
+
 <template>
   <q-page class="column content-center items-center bg-primary q-py-sm">
 
@@ -56,7 +85,7 @@
       </q-card-section>
     </q-card>
 
-    <project-card
+    <ProjectCard
       title="Vue 3 Forum"
       :status="{ label: $t('vue3-forum.status'), color: 'green' }"
       :intro="$t('vue3-forum.intro')"
@@ -66,10 +95,9 @@
       :demoButton="{ href: 'https://v3forum.mpalade.ro', tooltip: $t('tooltip.button-demo') }"
       :sourceButton="{ href: 'https://github.com/training-yoyosan/vue3-forum', tooltip: $t('tooltip.button-source') }"
       :tech="['vuejs', 'github', 'firebase']"
-    >
-    </project-card>
+    />
 
-    <project-card
+    <ProjectCard
       title="Lifebuff"
       :status="{ label: $t('lifebuff.status'), color: 'green' }"
       :intro="$t('lifebuff.intro')"
@@ -101,9 +129,9 @@
           />
         </q-card-section>
       </template>
-    </project-card>
+    </ProjectCard>
 
-    <project-card
+    <ProjectCard
       :title="$t('ql-example.title')"
       :status="{ label: $t('ql-example.status'), color: 'green' }"
       :intro="$t('ql-example.intro')"
@@ -131,9 +159,9 @@
           />
         </q-card-section>
       </template>
-    </project-card>
+    </ProjectCard>
 
-    <project-card
+    <ProjectCard
       title="re: plic"
       :status="{ label: $t('replic.status'), color: 'green' }"
       :intro="$t('replic.intro')"
@@ -148,9 +176,9 @@
           src="replic.png"
         />
       </template>
-    </project-card>
+    </ProjectCard>
 
-    <project-card
+    <ProjectCard
       v-show="false"
       :title="$t('contestatie.title')"
       :status="{ label: $t('contestatie.status'), color: 'green' }"
@@ -159,10 +187,9 @@
       :demoButton="{ href: 'https://contestatie-dev.abvlegal.ro', tooltip: $t('tooltip.button-demo') }"
       :sourceButton="{ href: null, tooltip: $t('tooltip.button-no-source') }"
       :tech="['vuejs', 'quasar', 'laravel', 'bitbucket']"
-    >
-    </project-card>
+    />
 
-    <project-card
+    <ProjectCard
       title="Awesome TODO"
       :status="{ label: $t('todo.status'), color: 'green' }"
       :intro="$t('todo.intro')"
@@ -179,9 +206,9 @@
           src="todo.png"
         />
       </template>
-    </project-card>
+    </ProjectCard>
 
-    <project-card
+    <ProjectCard
       title="The PIT"
       :status="{ label: $t('thepit.status'), color: 'green' }"
       :intro="$t('thepit.intro')"
@@ -197,56 +224,10 @@
           src="thepit.png"
         />
       </template>
-    </project-card>
+    </ProjectCard>
 
   </q-page>
 </template>
-
-<script>
-export default {
-  name: 'PageIndex',
-
-  created () {
-    this.$root.$on('language-changed', () => {
-      this.specialty = this.$t('about.speciality')
-    })
-  },
-
-  data () {
-    return {
-      specialty: this.$t('about.speciality')
-    }
-  },
-
-  components: {
-    'project-card': () => import('components/ProjectCard')
-  },
-
-  meta: {
-    // sets document title
-    // title: 'Marius Palade\'s official website',
-    // optional; sets final title as "Index Page - My Website", useful for multiple level meta
-    // titleTemplate: title => `${title}`,
-
-    // meta tags
-    meta: {
-      keywords: { name: 'keywords', content: 'vue.js, quasar, react, php, laravel, docker, python, django, dev-ops' },
-      equiv: { 'http-equiv': 'Content-Type', content: 'text/html; charset=UTF-8' }
-      // viewport: { ''}
-    },
-
-    // CSS tags
-    link: {
-      material: { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
-    },
-
-    // <noscript> tags
-    noscript: {
-      default: 'This is content for browsers with no JS (or disabled JS)'
-    }
-  }
-}
-</script>
 
 <style lang="sass">
 a

@@ -8,13 +8,3 @@
     <span class="text-white">Github</span>
   </div>
 </template>
-
-<script>
-export default {
-  name: 'TileGithub',
-
-  data () {
-    return {}
-  }
-}
-</script>

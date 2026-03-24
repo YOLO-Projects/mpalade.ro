@@ -40,13 +40,3 @@
     >Tailwindcss</a>
   </div>
 </template>
-
-<script>
-export default {
-  name: 'TileTailwind',
-
-  data () {
-    return {}
-  }
-}
-</script>

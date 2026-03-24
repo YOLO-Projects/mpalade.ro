@@ -12,12 +12,3 @@
     >Vue.js</a>
   </div>
 </template>
-
-<script>
-export default {
-  name: 'TileVuejs',
-  data () {
-    return {}
-  }
-}
-</script>

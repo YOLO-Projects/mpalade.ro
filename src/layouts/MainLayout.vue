@@ -1,3 +1,10 @@
+<script setup>
+import { useQuasar } from 'quasar'
+import MenuButtons from 'components/MenuButtons.vue'
+
+const $q = useQuasar()
+</script>
+
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header
@@ -23,7 +30,7 @@
           class="q-mt-sm"
           v-if="$q.screen.gt.sm"
         >
-          <menu-buttons class="row justify-around"></menu-buttons>
+          <MenuButtons class="row justify-around" />
         </div>
 
         <q-btn
@@ -34,7 +41,7 @@
         >
           <q-menu>
             <div class="column bg-primary">
-              <menu-buttons class="column justify-center items-center"></menu-buttons>
+              <MenuButtons class="column justify-center items-center" />
             </div>
           </q-menu>
         </q-btn>
@@ -90,21 +97,6 @@
     </q-page-container>
   </q-layout>
 </template>
-
-<script>
-export default {
-  name: 'MainLayout',
-
-  data () {
-    return {
-    }
-  },
-
-  components: {
-    'menu-buttons': require('components/MenuButtons').default
-  }
-}
-</script>
 
 <style lang="sass">
 .home-link

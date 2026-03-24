@@ -1,4 +1,51 @@
-/* eslint-disable vue/no-unused-components */
+<script setup>
+import { ref, defineAsyncComponent } from 'vue'
+import { useQuasar } from 'quasar'
+
+defineProps({
+  title: {
+    type: String,
+    required: true
+  },
+  status: {
+    type: Object,
+    required: true
+  },
+  intro: {
+    required: true
+  },
+  line1: String,
+  line2: String,
+  line3: String,
+  demoButton: {
+    type: Object,
+    required: true
+  },
+  sourceButton: {
+    type: Object,
+    required: true
+  },
+  downloadButton: Object,
+  tech: {
+    type: Array,
+    required: true
+  }
+})
+
+const $q = useQuasar()
+const techStack = ref(false)
+
+const tileMap = {
+  bitbucket: defineAsyncComponent(() => import('components/tech-tiles/bitbucket.vue')),
+  github: defineAsyncComponent(() => import('components/tech-tiles/github.vue')),
+  laravel: defineAsyncComponent(() => import('components/tech-tiles/laravel.vue')),
+  vuejs: defineAsyncComponent(() => import('components/tech-tiles/vuejs.vue')),
+  quasar: defineAsyncComponent(() => import('components/tech-tiles/quasar.vue')),
+  tailwind: defineAsyncComponent(() => import('components/tech-tiles/tailwind.vue')),
+  firebase: defineAsyncComponent(() => import('components/tech-tiles/firebase.vue'))
+}
+</script>
+
 <template>
   <q-card
     class="row q-ma-sm"
@@ -98,10 +145,10 @@
           <q-card-section class="q-pa-none q-ma-none">
             <div class="row">
               <component
-                v-for="(t, index) in tech"
-                :key=index
-                :is="t"
-              ></component>
+                v-for="(tile, index) in tech"
+                :key="index"
+                :is="tileMap[tile]"
+              />
             </div>
             <q-page-sticky
               position="top"
@@ -121,56 +168,3 @@
     </q-card-actions>
   </q-card>
 </template>
-
-<script>
-export default {
-  name: 'ProjectCard',
-
-  props: {
-    title: {
-      type: String,
-      required: true
-    },
-    status: {
-      type: Object,
-      required: true
-    },
-    intro: {
-      required: true
-    },
-    line1: String,
-    line2: String,
-    line3: String,
-    demoButton: {
-      type: Object,
-      required: true
-    },
-    sourceButton: {
-      type: Object,
-      required: true
-    },
-    downloadButton: Object,
-    tech: {
-      required: true,
-      type: Array,
-      default: () => []
-    }
-  },
-
-  data () {
-    return {
-      techStack: false
-    }
-  },
-
-  components: {
-    bitbucket: () => import('components/tech-tiles/bitbucket'),
-    github: () => import('components/tech-tiles/github'),
-    laravel: () => import('components/tech-tiles/laravel'),
-    vuejs: () => import('components/tech-tiles/vuejs'),
-    quasar: () => import('components/tech-tiles/quasar'),
-    tailwind: () => import('components/tech-tiles/tailwind'),
-    firebase: () => import('components/tech-tiles/firebase')
-  }
-}
-</script>

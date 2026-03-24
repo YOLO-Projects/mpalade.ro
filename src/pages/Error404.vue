@@ -1,8 +1,12 @@
+<script setup>
+import sadUrl from 'assets/quasar-logo-full.svg'
+</script>
+
 <template>
   <div class="fixed-center text-center">
     <p>
       <img
-        src="~assets/sad.svg"
+        :src="sadUrl"
         style="width:30vw;max-width:150px;"
       >
     </p>
@@ -17,9 +21,3 @@
     />
   </div>
 </template>
-
-<script>
-export default {
-  name: 'Error404'
-}
-</script>

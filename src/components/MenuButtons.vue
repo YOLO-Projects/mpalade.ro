@@ -1,3 +1,7 @@
+<script setup>
+import LanguageSwitch from 'components/LanguageSwitch.vue'
+</script>
+
 <template>
   <q-list>
     <q-item>
@@ -46,21 +50,7 @@
     </q-item>
 
     <q-item>
-      <language-switch></language-switch>
+      <LanguageSwitch />
     </q-item>
   </q-list>
 </template>
-
-<script>
-export default {
-  name: 'MenuButtons',
-
-  data () {
-    return {}
-  },
-
-  components: {
-    'language-switch': require('components/LanguageSwitch').default
-  }
-}
-</script>

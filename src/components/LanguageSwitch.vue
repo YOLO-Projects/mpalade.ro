@@ -1,3 +1,27 @@
+<script setup>
+import { ref, watch } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { locale, t } = useI18n()
+
+const buildLangOptions = () => [
+  { value: 'ro-ro', label: t('language.ro') },
+  { value: 'en-us', label: t('language.en') }
+]
+
+const lang = ref(locale.value)
+const langOptions = ref(buildLangOptions())
+
+watch(locale, (v) => {
+  lang.value = v
+})
+
+watch(lang, (v) => {
+  locale.value = v
+  langOptions.value = buildLangOptions()
+})
+</script>
+
 <template>
   <q-select
     label-color="white"
@@ -19,45 +43,6 @@
     </template>
   </q-select>
 </template>
-
-<script>
-export default {
-  data () {
-    return {
-      lang: this.$i18n.locale,
-      langOptions: [
-        {
-          value: 'ro-ro',
-          label: this.$t('language.ro')
-        },
-        {
-          value: 'en-us',
-          label: this.$t('language.en')
-        }
-      ]
-    }
-  },
-  watch: {
-    lang (lang) {
-      this.$i18n.locale = lang
-      // update language options to fix labels
-      this.langOptions = [
-        {
-          value: 'ro-ro',
-          label: this.$t('language.ro')
-        },
-        {
-          value: 'en-us',
-          label: this.$t('language.en')
-        }
-      ]
-      // emit language-changed event in global event bus
-      // this event in handled in Index page
-      this.$root.$emit('language-changed')
-    }
-  }
-}
-</script>
 
 <style lang="sass">
 div.q-dialog.fullscreen
