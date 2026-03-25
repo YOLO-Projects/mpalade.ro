@@ -1,8 +1,8 @@
 <script setup>
-import { useQuasar } from 'quasar'
-import MenuButtons from 'components/MenuButtons.vue'
+import MenuButtons from 'components/MenuButtons.vue';
+import { useQuasar } from 'quasar';
 
-const $q = useQuasar()
+const $q = useQuasar();
 </script>
 
 <template>

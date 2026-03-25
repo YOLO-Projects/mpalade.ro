@@ -1,5 +1,5 @@
 <script setup>
-import LanguageSwitch from 'components/LanguageSwitch.vue'
+import LanguageSwitch from 'components/LanguageSwitch.vue';
 </script>
 
 <template>

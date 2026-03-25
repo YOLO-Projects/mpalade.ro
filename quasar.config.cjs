@@ -1,10 +1,9 @@
 /* eslint-env node */
 
-module.exports = function (/* ctx */) {
+module.exports = (/* ctx */) => {
   return {
     boot: [
       'i18n',
-      'axios'
     ],
 
     css: [

@@ -1,25 +1,25 @@
 <script setup>
-import { ref, watch } from 'vue'
-import { useI18n } from 'vue-i18n'
+import { ref, watch } from 'vue';
+import { useI18n } from 'vue-i18n';
 
-const { locale, t } = useI18n()
+const { locale, t } = useI18n();
 
 const buildLangOptions = () => [
   { value: 'ro-ro', label: t('language.ro') },
-  { value: 'en-us', label: t('language.en') }
-]
+  { value: 'en-us', label: t('language.en') },
+];
 
-const lang = ref(locale.value)
-const langOptions = ref(buildLangOptions())
+const lang = ref(locale.value);
+const langOptions = ref(buildLangOptions());
 
 watch(locale, (v) => {
-  lang.value = v
-})
+  lang.value = v;
+});
 
 watch(lang, (v) => {
-  locale.value = v
-  langOptions.value = buildLangOptions()
-})
+  locale.value = v;
+  langOptions.value = buildLangOptions();
+});
 </script>
 
 <template>

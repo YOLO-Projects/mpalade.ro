@@ -1,0 +1,154 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.4.8/schema.json",
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "semicolons": "always"
+    }
+  },
+  "files": {
+    "includes": [
+      "**"
+    ]
+  },
+  "assist": {
+    "enabled": true,
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 120,
+    "lineEnding": "lf"
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "correctness": {
+        "noNodejsModules": {
+          "level": "off",
+          "options": {}
+        }
+      },
+      "complexity": {
+        "noExcessiveCognitiveComplexity": {
+          "level": "error",
+          "options": {}
+        },
+        "noExcessiveNestedTestSuites": {
+          "level": "off",
+          "options": {}
+        }
+      },
+      "nursery": {},
+      "performance": {
+        "noNamespaceImport": {
+          "level": "error",
+          "options": {}
+        },
+        "useTopLevelRegex": {
+          "level": "error",
+          "options": {}
+        }
+      },
+      "style": {
+        "noDefaultExport": {
+          "level": "error",
+          "options": {}
+        },
+        "noParameterProperties": {
+          "level": "off",
+          "options": {}
+        },
+        "noRestrictedImports": {
+          "level": "error",
+          "options": {
+            "paths": {
+              "lodash": "Do not import lodash directly, use path imports for the specific function"
+            }
+          }
+        },
+        "useDefaultSwitchClause": {
+          "level": "off",
+          "options": {}
+        },
+        "useFilenamingConvention": {
+          "level": "error",
+          "options": {
+            "strictCase": false,
+            "filenameCases": [
+              "camelCase",
+              "kebab-case",
+              "snake_case",
+              "PascalCase"
+            ]
+          }
+        },
+        "useThrowOnlyError": {
+          "level": "error",
+          "options": {}
+        },
+        "useNamingConvention": {
+          "level": "error",
+          "options": {
+            "strictCase": false,
+            "conventions": [
+              // Allow __statics
+              {
+                "selector": {
+                  "kind": "objectLiteralProperty"
+                },
+                "match": "\\$set(?:_once)?|__statics|(.*)",
+                "formats": [
+                  "camelCase",
+                  "CONSTANT_CASE",
+                  "snake_case",
+                  "PascalCase"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "suspicious": {
+        "noConsole": {
+          "level": "error",
+          "options": {
+            "allow": [
+              "error",
+              "warn",
+              "info"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "overrides": [
+    {
+      "includes": [
+        "**/*.vue",
+        "**/*.js"
+      ],
+      "linter": {
+        "rules": {
+          "correctness": {
+            "noUndeclaredVariables": "off",
+            "noUnusedVariables": "off",
+            "noUnusedImports": "off",
+            "useHookAtTopLevel": "off"
+          },
+          "style": {
+            "noDefaultExport": "off"
+          }
+        }
+      }
+    }
+  ]
+}

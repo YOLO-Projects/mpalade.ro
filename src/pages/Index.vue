@@ -1,30 +1,30 @@
 <script setup>
-import { ref, watch } from 'vue'
-import { useMeta, useQuasar } from 'quasar'
-import { useI18n } from 'vue-i18n'
-import ProjectCard from 'components/ProjectCard.vue'
+import ProjectCard from 'components/ProjectCard.vue';
+import { useMeta, useQuasar } from 'quasar';
+import { ref, watch } from 'vue';
+import { useI18n } from 'vue-i18n';
 
-const $q = useQuasar()
-const { locale, t } = useI18n()
+const $q = useQuasar();
+const { locale, t } = useI18n();
 
 useMeta(() => ({
   meta: {
     keywords: { name: 'keywords', content: 'vue.js, quasar, react, php, laravel, docker, python, django, dev-ops' },
-    equiv: { 'http-equiv': 'Content-Type', content: 'text/html; charset=UTF-8' }
+    equiv: { 'http-equiv': 'Content-Type', content: 'text/html; charset=UTF-8' },
   },
   link: {
-    material: { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
+    material: { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
   },
   noscript: {
-    default: 'This is content for browsers with no JS (or disabled JS)'
-  }
-}))
+    default: 'This is content for browsers with no JS (or disabled JS)',
+  },
+}));
 
-const specialty = ref(t('about.speciality'))
+const specialty = ref(t('about.speciality'));
 
 watch(locale, () => {
-  specialty.value = t('about.speciality')
-})
+  specialty.value = t('about.speciality');
+});
 </script>
 
 <template>

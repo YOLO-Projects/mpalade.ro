@@ -1,39 +1,39 @@
 <script setup>
-import { ref, defineAsyncComponent } from 'vue'
-import { useQuasar } from 'quasar'
+import { useQuasar } from 'quasar';
+import { defineAsyncComponent, ref } from 'vue';
 
 defineProps({
   title: {
     type: String,
-    required: true
+    required: true,
   },
   status: {
     type: Object,
-    required: true
+    required: true,
   },
   intro: {
-    required: true
+    required: true,
   },
   line1: String,
   line2: String,
   line3: String,
   demoButton: {
     type: Object,
-    required: true
+    required: true,
   },
   sourceButton: {
     type: Object,
-    required: true
+    required: true,
   },
   downloadButton: Object,
   tech: {
     type: Array,
-    required: true
-  }
-})
+    required: true,
+  },
+});
 
-const $q = useQuasar()
-const techStack = ref(false)
+const $q = useQuasar();
+const techStack = ref(false);
 
 const tileMap = {
   bitbucket: defineAsyncComponent(() => import('components/tech-tiles/bitbucket.vue')),
@@ -42,8 +42,8 @@ const tileMap = {
   vuejs: defineAsyncComponent(() => import('components/tech-tiles/vuejs.vue')),
   quasar: defineAsyncComponent(() => import('components/tech-tiles/quasar.vue')),
   tailwind: defineAsyncComponent(() => import('components/tech-tiles/tailwind.vue')),
-  firebase: defineAsyncComponent(() => import('components/tech-tiles/firebase.vue'))
-}
+  firebase: defineAsyncComponent(() => import('components/tech-tiles/firebase.vue')),
+};
 </script>
 
 <template>

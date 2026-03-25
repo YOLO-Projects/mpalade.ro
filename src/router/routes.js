@@ -5,15 +5,15 @@ const routes = [
     children: [
       {
         path: '',
-        component: () => import('pages/Index.vue')
-      }
-    ]
-  }
-]
+        component: () => import('pages/Index.vue'),
+      },
+    ],
+  },
+];
 
 routes.push({
   path: '/:pathMatch(.*)*',
-  component: () => import('pages/Error404.vue')
-})
+  component: () => import('pages/Error404.vue'),
+});
 
-export default routes
+export default routes;
