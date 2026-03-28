@@ -8,13 +8,3 @@
     <span class="text-orange">Firebase</span>
   </div>
 </template>
-
-<script>
-export default {
-  name: 'TileFirebase',
-
-  data () {
-    return {}
-  }
-}
-</script>

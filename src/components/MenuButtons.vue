@@ -1,22 +1,9 @@
+<script setup>
+import LanguageSwitch from 'components/LanguageSwitch.vue';
+</script>
+
 <template>
   <q-list>
-    <q-item>
-      <q-item-section>
-        <q-btn
-          round
-          type="a"
-          href="skype:mmarius.palade?chat"
-          class="glossy"
-          color="primary"
-          icon="fab fa-skype"
-        >
-          <q-tooltip content-class="bg-blue-7">
-            mmarius.palade
-          </q-tooltip>
-        </q-btn>
-      </q-item-section>
-    </q-item>
-
     <q-item>
       <q-item-section>
         <q-btn
@@ -46,21 +33,7 @@
     </q-item>
 
     <q-item>
-      <language-switch></language-switch>
+      <LanguageSwitch />
     </q-item>
   </q-list>
 </template>
-
-<script>
-export default {
-  name: 'MenuButtons',
-
-  data () {
-    return {}
-  },
-
-  components: {
-    'language-switch': require('components/LanguageSwitch').default
-  }
-}
-</script>

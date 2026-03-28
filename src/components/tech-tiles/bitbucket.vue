@@ -8,13 +8,3 @@
     <span class="text-white">Bitbucket</span>
   </div>
 </template>
-
-<script>
-export default {
-  name: 'TileBitbucket',
-
-  data () {
-    return {}
-  }
-}
-</script>

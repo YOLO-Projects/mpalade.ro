@@ -1,30 +1,33 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import { route } from 'quasar/wrappers';
+import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router';
+import routes from './routes';
 
-import routes from './routes'
+const CHUNK_LOAD_ERROR = /ChunkLoadError|Failed to fetch dynamically imported module/;
 
-Vue.use(VueRouter)
+export default route(() => {
+  const createHistory = process.env.VUE_ROUTER_MODE === 'history' ? createWebHistory : createWebHashHistory;
 
-/*
- * If not building with SSR mode, you can
- * directly export the Router instantiation;
- *
- * The function below can be async too; either use
- * async/await or return a Promise which resolves
- * with the Router instance.
- */
-
-export default function (/* { store, ssrContext } */) {
-  const Router = new VueRouter({
-    scrollBehavior: () => ({ x: 0, y: 0 }),
+  const router = createRouter({
+    scrollBehavior: () => ({ left: 0, top: 0 }),
     routes,
+    history: createHistory(process.env.VUE_ROUTER_BASE),
+  });
 
-    // Leave these as they are and change in quasar.conf.js instead!
-    // quasar.conf.js -> build -> vueRouterMode
-    // quasar.conf.js -> build -> publicPath
-    mode: process.env.VUE_ROUTER_MODE,
-    base: process.env.VUE_ROUTER_BASE
-  })
+  router.onError((error, to) => {
+    if (CHUNK_LOAD_ERROR.test(error?.message)) {
+      const key = `chunk_retry_${to.fullPath}`;
+      if (!sessionStorage.getItem(key)) {
+        sessionStorage.setItem(key, '1');
+        window.location.assign(to.fullPath);
+      } else {
+        console.error('[router] ChunkLoadError reload loop detected', { path: to?.fullPath });
+      }
 
-  return Router
-}
+      return;
+    }
+
+    console.error('[router] Unhandled navigation error', { error, path: to?.fullPath });
+  });
+
+  return router;
+});

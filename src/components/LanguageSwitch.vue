@@ -1,63 +1,27 @@
-<template>
-  <q-select
-    label-color="white"
-    v-model="lang"
-    :options="langOptions"
-    :label="$t('language.label')"
-    borderless
-    emit-value
-    map-options
-    rounded
-    style="min-width: 126px"
-    standout
-  >
-    <template v-slot:prepend>
-      <q-icon
-        color="white"
-        name="language"
-      />
-    </template>
-  </q-select>
-</template>
+<script setup>
+import { computed } from 'vue';
+import { useI18n } from 'vue-i18n';
 
-<script>
-export default {
-  data () {
-    return {
-      lang: this.$i18n.locale,
-      langOptions: [
-        {
-          value: 'ro-ro',
-          label: this.$t('language.ro')
-        },
-        {
-          value: 'en-us',
-          label: this.$t('language.en')
-        }
-      ]
-    }
-  },
-  watch: {
-    lang (lang) {
-      this.$i18n.locale = lang
-      // update language options to fix labels
-      this.langOptions = [
-        {
-          value: 'ro-ro',
-          label: this.$t('language.ro')
-        },
-        {
-          value: 'en-us',
-          label: this.$t('language.en')
-        }
-      ]
-      // emit language-changed event in global event bus
-      // this event in handled in Index page
-      this.$root.$emit('language-changed')
-    }
-  }
-}
+const { locale, t } = useI18n();
+
+const langOptions = computed(() => [
+  { value: 'ro-ro', label: t('language.ro') },
+  { value: 'en-us', label: t('language.en') },
+]);
+
+const lang = computed({
+  get: () => locale.value,
+  set: (v) => { locale.value = v; },
+});
 </script>
+
+<template><q-select label-color="white" v-model="lang" :options="langOptions" :label="$t('language.label')" borderless emit-value
+  map-options rounded style="min-width: 126px" standout>
+  <template v-slot:prepend>
+    <q-icon color="white" name="language" />
+  </template>
+</q-select>
+</template>
 
 <style lang="sass">
 div.q-dialog.fullscreen

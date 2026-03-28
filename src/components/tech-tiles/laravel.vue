@@ -12,13 +12,3 @@
     >Laravel</a>
   </div>
 </template>
-
-<script>
-export default {
-  name: 'LaravelTile',
-
-  data () {
-    return {}
-  }
-}
-</script>

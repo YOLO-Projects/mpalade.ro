@@ -1,18 +1,26 @@
-import Vue from 'vue'
-import VueI18n from 'vue-i18n'
-import messages from 'src/i18n'
+import { boot } from 'quasar/wrappers';
+import messages from 'src/i18n';
+import { createI18n } from 'vue-i18n';
 
-Vue.use(VueI18n)
+const getInitialLocale = () => {
+  const loc = (window.navigator?.language || '').toLowerCase();
+  if (loc.startsWith('ro')) {
+    return 'ro-ro';
+  }
 
-const i18n = new VueI18n({
-  locale: 'ro-ro',
+  return 'en-us';
+};
+
+const i18n = createI18n({
+  legacy: false,
+  locale: getInitialLocale(),
   fallbackLocale: 'en-us',
-  messages
-})
+  messages,
+  globalInjection: true,
+});
 
-export default ({ app }) => {
-  // Set i18n instance on app
-  app.i18n = i18n
-}
+export default boot(({ app }) => {
+  app.use(i18n);
+});
 
-export { i18n }
+export { i18n };
