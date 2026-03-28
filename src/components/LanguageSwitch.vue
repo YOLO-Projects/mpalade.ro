@@ -1,47 +1,26 @@
 <script setup>
-import { ref, watch } from 'vue';
+import { computed, ref, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
 
 const { locale, t } = useI18n();
 
-const buildLangOptions = () => [
+const lang = ref(locale.value);
+const langOptions = computed(() => [
   { value: 'ro-ro', label: t('language.ro') },
   { value: 'en-us', label: t('language.en') },
-];
-
-const lang = ref(locale.value);
-const langOptions = ref(buildLangOptions());
-
-watch(locale, (v) => {
-  lang.value = v;
-});
+]);
 
 watch(lang, (v) => {
   locale.value = v;
-  langOptions.value = buildLangOptions();
 });
 </script>
 
-<template>
-  <q-select
-    label-color="white"
-    v-model="lang"
-    :options="langOptions"
-    :label="$t('language.label')"
-    borderless
-    emit-value
-    map-options
-    rounded
-    style="min-width: 126px"
-    standout
-  >
-    <template v-slot:prepend>
-      <q-icon
-        color="white"
-        name="language"
-      />
-    </template>
-  </q-select>
+<template><q-select label-color="white" v-model="lang" :options="langOptions" :label="$t('language.label')" borderless emit-value
+  map-options rounded style="min-width: 126px" standout>
+  <template v-slot:prepend>
+    <q-icon color="white" name="language" />
+  </template>
+</q-select>
 </template>
 
 <style lang="sass">

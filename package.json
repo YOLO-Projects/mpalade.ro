@@ -21,8 +21,6 @@
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.29.0",
-    "@babel/eslint-parser": "^7.26.0",
     "@biomejs/biome": "2.4.9",
     "@quasar/app-vite": "^1.10.2",
     "autoprefixer": "^10.4.27",

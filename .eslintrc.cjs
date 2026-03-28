@@ -4,23 +4,17 @@ module.exports = {
 
   parserOptions: {
     ecmaVersion: 2022,
-    sourceType: 'module'
+    sourceType: 'module',
   },
 
   env: {
     browser: true,
-    es2022: true
+    es2022: true,
   },
 
-  extends: [
-    'eslint:recommended',
-    'plugin:vue/vue3-essential',
-    'standard'
-  ],
+  extends: ['eslint:recommended', 'plugin:vue/vue3-essential', 'standard'],
 
-  plugins: [
-    'vue'
-  ],
+  plugins: ['vue'],
 
   globals: {
     ga: 'readonly',
@@ -28,7 +22,7 @@ module.exports = {
     __statics: 'readonly',
     process: 'readonly',
     Capacitor: 'readonly',
-    chrome: 'readonly'
+    chrome: 'readonly',
   },
 
   rules: {
@@ -55,18 +49,9 @@ module.exports = {
       files: ['*.vue'],
       parser: 'vue-eslint-parser',
       parserOptions: {
-        parser: '@babel/eslint-parser',
-        requireConfigFile: false,
         ecmaVersion: 2022,
-        sourceType: 'module'
-      }
+        sourceType: 'module',
+      },
     },
-    {
-      files: ['*.{js,cjs}'],
-      parserOptions: {
-        parser: '@babel/eslint-parser',
-        requireConfigFile: false
-      }
-    }
-  ]
-}
+  ],
+};

@@ -12,9 +12,6 @@ useMeta(() => ({
     keywords: { name: 'keywords', content: 'vue.js, quasar, react, php, laravel, docker, python, django, dev-ops' },
     equiv: { 'http-equiv': 'Content-Type', content: 'text/html; charset=UTF-8' },
   },
-  link: {
-    material: { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
-  },
   noscript: {
     default: 'This is content for browsers with no JS (or disabled JS)',
   },
