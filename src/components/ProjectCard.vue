@@ -30,30 +30,31 @@ defineProps({
   tech: {
     type: Array,
     required: true,
+    default: () => [],
   },
 });
 
 const $q = useQuasar();
 const techStack = ref(false);
 
-const tile = (loader) =>
+const tile = (name, loader) =>
   defineAsyncComponent({
     loader,
     onError: (err, _, fail) => {
-      console.error('[ProjectCard] tile failed to load:', err);
+      console.error('[ProjectCard] tile failed to load:', { tile: name, error: err?.message });
       fail();
     },
   });
 
 const tileMap = {
-  bitbucket: tile(() => import('components/tech-tiles/bitbucket.vue')),
-  github: tile(() => import('components/tech-tiles/github.vue')),
-  laravel: tile(() => import('components/tech-tiles/laravel.vue')),
-  vuejs: tile(() => import('components/tech-tiles/vuejs.vue')),
-  quasar: tile(() => import('components/tech-tiles/quasar.vue')),
-  tailwind: tile(() => import('components/tech-tiles/tailwind.vue')),
-  firebase: tile(() => import('components/tech-tiles/firebase.vue')),
-  php: tile(() => import('components/tech-tiles/php.vue')),
+  bitbucket: tile('bitbucket', () => import('components/tech-tiles/bitbucket.vue')),
+  github: tile('github', () => import('components/tech-tiles/github.vue')),
+  laravel: tile('laravel', () => import('components/tech-tiles/laravel.vue')),
+  vuejs: tile('react', () => import('components/tech-tiles/vuejs.vue')),
+  quasar: tile('quasar', () => import('components/tech-tiles/quasar.vue')),
+  tailwind: tile('tailwind', () => import('components/tech-tiles/tailwind.vue')),
+  firebase: tile('firebase', () => import('components/tech-tiles/firebase.vue')),
+  php: tile('php', () => import('components/tech-tiles/php.vue')),
 };
 </script>
 

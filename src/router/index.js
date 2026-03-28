@@ -14,9 +14,19 @@ export default route(() => {
   });
 
   router.onError((error, to) => {
-    if (CHUNK_LOAD_ERROR.test(error.message)) {
-      window.location.assign(to.fullPath);
+    if (CHUNK_LOAD_ERROR.test(error?.message)) {
+      const key = `chunk_retry_${to.fullPath}`;
+      if (!sessionStorage.getItem(key)) {
+        sessionStorage.setItem(key, '1');
+        window.location.assign(to.fullPath);
+      } else {
+        console.error('[router] ChunkLoadError reload loop detected', { path: to?.fullPath });
+      }
+
+      return;
     }
+
+    console.error('[router] Unhandled navigation error', { error, path: to?.fullPath });
   });
 
   return router;

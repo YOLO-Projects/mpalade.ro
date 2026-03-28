@@ -1,17 +1,17 @@
 <script setup>
-import { computed, ref, watch } from 'vue';
+import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 
 const { locale, t } = useI18n();
 
-const lang = ref(locale.value);
 const langOptions = computed(() => [
   { value: 'ro-ro', label: t('language.ro') },
   { value: 'en-us', label: t('language.en') },
 ]);
 
-watch(lang, (v) => {
-  locale.value = v;
+const lang = computed({
+  get: () => locale.value,
+  set: (v) => { locale.value = v; },
 });
 </script>
 
