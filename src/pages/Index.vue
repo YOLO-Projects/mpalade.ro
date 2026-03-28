@@ -35,13 +35,17 @@ const specialty = computed(() => t('about.speciality'));
 
           <div v-html="specialty"></div>
 
-          <br /><br />
+          <br />
+
+          <div class="q-mx-auto">{{ $t('about.availability') }}</div>
+
+          <br />
 
           <div class="q-mx-auto">
             {{ $t("about.contact-email") }}
-            <q-btn color="primary" size="lg" flat type="a" href="mailto: contact@mpalade.ro" class="q-my-md text-bold"
-              no-caps>
-              contact@mpalade.ro
+            <q-btn color="primary" size="lg" flat type="a" href="mailto: contact@handcraftsoftware.ro"
+              class="q-my-md text-bold" no-caps>
+              contact@handcraftsoftware.ro
             </q-btn>
           </div>
 

@@ -3,8 +3,9 @@ export default {
     whoami: 'Cine sunt?',
     greet: 'Salut! Numele meu este Marius Palade.',
     speciality:
-      'Sunt programator web "Full Stack", lucrând în principal cu <a href="https://laravel.com" target="_blank">Laravel</a> și Vue.js + <a href="https://quasar.dev" target="_blank">Quasar</a>.',
-    'contact-email': 'Contactează-mă pentru oportunități via ',
+      'Sunt contractor full-stack senior cu 17+ ani experiență, lucrând în principal cu TypeScript, Vue.js, React, React Native, Laravel și Node.js.',
+    'contact-email': 'Contactează-mă la',
+    availability: 'Disponibil pentru contracte remote EU/UK/US.',
     projects: 'Mai jos găsești o scurtă prezentare a proiectelor la care am lucrat și lucrez acum.',
   },
   'vue3-forum': {

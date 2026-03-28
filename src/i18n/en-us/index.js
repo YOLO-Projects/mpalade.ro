@@ -3,8 +3,9 @@ export default {
     whoami: 'Who am I?',
     greet: 'Hi there! My name is Marius Palade.',
     speciality:
-      'I\'m a Full Stack Web Developer, mainly working with <a href="https://laravel.com" target="_blank">Laravel</a> and Vue.js + <a href="https://quasar.dev" target="_blank">Quasar</a>.',
-    'contact-email': 'Contact me for various opportunities via ',
+      ' I\'m a senior full-stack contractor with 17+ years of experience, specialising in TypeScript, Vue.js, React, React Native, Laravel and Node.js.',
+    'contact-email': 'Get in touch at',
+    availability: 'Available for remote EU/UK/US contracts.',
     projects: "Find below some of the projects I've worked on and the ones I'm working at right now.",
   },
   'ql-example': {
