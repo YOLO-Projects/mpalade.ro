@@ -57,6 +57,7 @@ export default {
     'button-no-source': 'Codul sursă nu este disponibil',
     'button-download': 'Descarcă aplicația',
     'button-live': 'Vezi live',
+    cv: 'CV-ul meu',
   },
   language: {
     label: 'Limba',

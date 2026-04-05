@@ -57,6 +57,7 @@ export default {
     'button-no-source': 'Source code not available',
     'button-download': 'Download the application',
     'button-live': 'View live',
+    cv: 'My CV / Resume',
   },
   language: {
     label: 'Language',
