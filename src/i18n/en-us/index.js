@@ -58,6 +58,8 @@ export default {
     'button-download': 'Download the application',
     'button-live': 'View live',
     cv: 'My CV / Resume',
+    linkedin: 'LinkedIn profile',
+    github: 'GitHub profile',
   },
   language: {
     label: 'Language',

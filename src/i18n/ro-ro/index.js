@@ -58,6 +58,8 @@ export default {
     'button-download': 'Descarcă aplicația',
     'button-live': 'Vezi live',
     cv: 'CV-ul meu',
+    linkedin: 'Profil LinkedIn',
+    github: 'Profil GitHub',
   },
   language: {
     label: 'Limba',
