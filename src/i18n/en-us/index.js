@@ -3,7 +3,7 @@ export default {
     whoami: 'Who am I?',
     greet: 'Hi there! My name is Marius Palade.',
     speciality:
-      ' I\'m a senior full-stack contractor with 17+ years of experience, specialising in TypeScript, Vue.js, React, React Native, Laravel and Node.js.',
+      " I'm a senior full-stack contractor with 17+ years of experience, specialising in TypeScript, Vue.js, React, React Native, Laravel and Node.js.",
     'contact-email': 'Get in touch at',
     availability: 'Available for remote EU/UK/US contracts.',
     projects: "Find below some of the projects I've worked on and the ones I'm working at right now.",
