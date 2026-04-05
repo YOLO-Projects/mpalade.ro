@@ -87,24 +87,24 @@ const tileMap = {
   </q-card-section>
   <q-card-actions vertical class="justify-around" :class="$q.screen.gt.sm ? 'q-px-md' : 'q-px-sm'">
     <q-btn round color="red" type="a" :href="demoButton.href" target="_blank" icon="fas fa-eye">
-      <q-tooltip content-class="bg-red">
+      <q-tooltip class="bg-red">
         {{ demoButton.tooltip }}
       </q-tooltip>
     </q-btn>
     <q-btn round type="a" :color="sourceButton.href ? 'accent' : 'grey'" icon="fab fa-github-alt"
       :href="sourceButton.href" target="_blank">
-      <q-tooltip :content-class="sourceButton.href ? 'bg-accent' : 'bg-grey'">
+      <q-tooltip :class="sourceButton.href ? 'bg-accent' : 'bg-grey'">
         {{ sourceButton.tooltip }}
       </q-tooltip>
     </q-btn>
     <q-btn round type="a" color="orange" icon="fas fa-layer-group" @click="techStack = true">
-      <q-tooltip content-class="bg-orange">
+      <q-tooltip class="bg-orange">
         {{ $t('language.tech') }}
       </q-tooltip>
     </q-btn>
     <q-btn v-if="downloadButton" round color="green-7" type="a" :href="downloadButton.href" target="_blank"
       icon="get_app">
-      <q-tooltip content-class="bg-green-7">
+      <q-tooltip class="bg-green-7">
         {{ downloadButton.tooltip }}
       </q-tooltip>
     </q-btn>

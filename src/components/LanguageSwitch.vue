@@ -11,7 +11,9 @@ const langOptions = computed(() => [
 
 const lang = computed({
   get: () => locale.value,
-  set: (v) => { locale.value = v; },
+  set: (v) => {
+    locale.value = v;
+  },
 });
 </script>
 
